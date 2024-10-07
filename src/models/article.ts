@@ -1,4 +1,4 @@
-class Article {
+interface Article {
     nom: string;
     description: string;
     prix: number;
