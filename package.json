@@ -1,0 +1,28 @@
+{
+    "name": "static-e-commerce",
+    "version": "1.0.0",
+    "description": "A static e-commerce site built with HTML, CSS, and TypeScript",
+    "main": "src/index.html",
+    "scripts": {
+        "build": "tsc",
+        "start": "npm run build && npx serve dist",
+        "serve": "npx serve dist"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/yourusername/static-e-commerce.git"
+    },
+    "keywords": [
+        "static",
+        "e-commerce",
+        "typescript",
+        "html",
+        "css"
+    ],
+    "author": "Your Name",
+    "license": "MIT",
+    "devDependencies": {
+        "typescript": "^5.6.2",
+        "serve": "^14.0.1"
+    }
+}
