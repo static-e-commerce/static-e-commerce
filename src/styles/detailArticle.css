@@ -56,10 +56,6 @@ img {
     color: var(--in-stock-color);
 }
 
-.out-of-stock {
-    color: var(--out-stock-color);
-}
-
 .fa-shopping-cart {
     font-size: 20px;
 }
@@ -107,7 +103,6 @@ img {
 
     .price {
         font-size: 28px;
-        margin-bottom: 0;
     }
 
     .description {
