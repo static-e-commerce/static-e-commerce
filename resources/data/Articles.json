@@ -6,7 +6,7 @@
         "prix": 129.99,
         "catégorie": "Mobilier",
         "stock": true,
-        "image": "resources/images/chaise-bureau.png"
+        "image": "../../resources/images/chaise-bureau.webp"
       },
       {
         "nom": "Lampe de chevet LED",
@@ -14,7 +14,7 @@
         "prix": 39.99,
         "catégorie": "Éclairage",
         "stock": false,
-        "image": "resources/images/lampe-led.png"
+        "image": "../../resources/images/lampe-led.webp"
       },
       {
         "nom": "Casque audio sans fil",
@@ -22,7 +22,7 @@
         "prix": 89.99,
         "catégorie": "Électronique",
         "stock": true,
-        "image": "resources/images/casque-sans-fil.png"
+        "image": "../../resources/images/casque-sans-fil.webp"
       },
       {
         "nom": "Tapis de yoga antidérapant",
@@ -30,7 +30,7 @@
         "prix": 24.99,
         "catégorie": "Sport",
         "stock": true,
-        "image": "resources/images/tapis-yoga.png"
+        "image": "../../resources/images/tapis-yoga.webp"
       },
       {
         "nom": "Table basse scandinave",
@@ -38,7 +38,7 @@
         "prix": 149.99,
         "catégorie": "Mobilier",
         "stock": true,
-        "image": "resources/images/table-basse.png"
+        "image": "../../resources/images/table-basse.webp"
       },
       {
         "nom": "Montre connectée sport",
@@ -46,7 +46,7 @@
         "prix": 119.99,
         "catégorie": "Électronique",
         "stock": false,
-        "image": "resources/images/montre-connectee.png"
+        "image": "../../resources/images/montre-connectee.webp"
       },
       {
         "nom": "Cafetière italienne",
@@ -54,7 +54,7 @@
         "prix": 29.99,
         "catégorie": "Cuisine",
         "stock": true,
-        "image": "resources/images/cafetiere-italienne.png"
+        "image": "../../resources/images/cafetiere-italienne.webp"
       },
       {
         "nom": "Couverts en acier inoxydable",
@@ -62,7 +62,7 @@
         "prix": 59.99,
         "catégorie": "Cuisine",
         "stock": true,
-        "image": "resources/images/couverts-inox.png"
+        "image": "../../resources/images/couverts-inox.webp"
       },
       {
         "nom": "Sac à dos de randonnée",
@@ -70,7 +70,7 @@
         "prix": 79.99,
         "catégorie": "Sport",
         "stock": false,
-        "image": "resources/images/sac-a-dos.png"
+        "image": "../../resources/images/sac-a-dos.webp"
       },
       {
         "nom": "Machine à laver compacte",
@@ -78,7 +78,7 @@
         "prix": 299.99,
         "catégorie": "Électroménager",
         "stock": true,
-        "image": "resources/images/machine-a-laver.png"
+        "image": "../../resources/images/machine-a-laver.webp"
       },
       {
         "nom": "Écouteurs sans fil",
@@ -86,7 +86,7 @@
         "prix": 59.99,
         "catégorie": "Électronique",
         "stock": true,
-        "image": "resources/images/ecouteurs-sans-fil.png"
+        "image": "../../resources/images/ecouteurs-sans-fil.webp"
       },
       {
         "nom": "Batteur électrique",
@@ -94,7 +94,7 @@
         "prix": 19.99,
         "catégorie": "Cuisine",
         "stock": false,
-        "image": "resources/images/batteur-electrique.png"
+        "image": "../../resources/images/batteur-electrique.webp"
       },
       {
         "nom": "Smartphone 5G",
@@ -102,7 +102,7 @@
         "prix": 499.99,
         "catégorie": "Électronique",
         "stock": true,
-        "image": "resources/images/smartphone-5g.png"
+        "image": "../../resources/images/smartphone-5g.webp"
       },
       {
         "nom": "Four à micro-ondes avec grill",
@@ -110,7 +110,7 @@
         "prix": 99.99,
         "catégorie": "Électroménager",
         "stock": false,
-        "image": "resources/images/four-micro-ondes.png"
+        "image": "../../resources/images/four-micro-ondes.webp"
       },
       {
         "nom": "Vélo électrique pliable",
@@ -118,7 +118,7 @@
         "prix": 799.99,
         "catégorie": "Transport",
         "stock": true,
-        "image": "resources/images/velo-electrique.png"
+        "image": "../../resources/images/velo-electrique.webp"
       },
       {
         "nom": "Grille-pain en acier inoxydable",
@@ -126,7 +126,7 @@
         "prix": 34.99,
         "catégorie": "Cuisine",
         "stock": true,
-        "image": "resources/images/grille-pain.png"
+        "image": "../../resources/images/grille-pain.webp"
       },
       {
         "nom": "Lunettes de soleil polarisées",
@@ -134,7 +134,7 @@
         "prix": 24.99,
         "catégorie": "Accessoires",
         "stock": false,
-        "image": "resources/images/lunettes-soleil.png"
+        "image": "../../resources/images/lunettes-soleil.webp"
       },
       {
         "nom": "Imprimante multifonction",
@@ -142,7 +142,7 @@
         "prix": 159.99,
         "catégorie": "Électronique",
         "stock": true,
-        "image": "resources/images/imprimante.png"
+        "image": "../../resources/images/imprimante.webp"
       },
       {
         "nom": "Gants de cyclisme",
@@ -150,7 +150,7 @@
         "prix": 19.99,
         "catégorie": "Sport",
         "stock": true,
-        "image": "resources/images/gants-cyclisme.png"
+        "image": "../../resources/images/gants-cyclisme.webp"
       }
     ]
   }
