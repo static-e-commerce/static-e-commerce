@@ -1,0 +1,44 @@
+:root {
+    --dark-blue: #023047;
+    --blue: #219EBC;
+    --light-blue: #8ECAE6;
+    --button-color: #FFB703;
+    --orange: #FB8500;
+    --in-stock-color: #F60303;
+    --out-stock-color: #04C300;
+    --category-color: #EDEDED;
+    --text-color: #FFFFFF;
+    --header-text-color: #000000;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #0575AD;
+}
+
+body {
+    background: linear-gradient(180deg, #0575AD 3%, var(--dark-blue) 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+p {
+    font-family: roboto;
+    color: var(--text-color);
+}
+
+h1 {
+    font-family: roboto;
+    color: var(--text-color);
+}
+
+button {
+    font-family: roboto;
+    color: var(--header-text-color);
+    background-color: var(--button-color);
+}
