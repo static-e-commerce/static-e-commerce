@@ -67,3 +67,61 @@ img {
 .fa-shopping-cart {
     font-size: 20px;
 }
+
+@media (max-width: 768px) {
+
+    main {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    section {
+        width: 100%;
+        height: auto;
+        display: flex;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 3rem;
+    }
+
+    img {
+        height: auto;
+        width: 80%;
+        margin: auto;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+        border-radius: 30px;
+    }
+
+    .details {
+        margin-left: 0;
+        margin-top: 0;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    .category {
+        font-size: 24px;
+    }
+
+    .price {
+        font-size: 28px;
+        margin-bottom: 0;
+    }
+
+    .description {
+        font-size: 18px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .button-container {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
