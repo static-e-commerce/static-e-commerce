@@ -13,18 +13,16 @@
 
 html, body {
     height: 100%;
+    height: 100%;
     margin: 0;
     padding: 0;
-    background-color: #0575AD;
 }
 
 body {
     background: linear-gradient(180deg, #0575AD 3%, var(--dark-blue) 100%);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    min-height: 100%;
     display: flex;
-    flex-direction: column;
 }
 
 p {
@@ -56,4 +54,15 @@ button {
 button:hover {
     background-color: #eeab03;
     transition: 0.5s;
+}
+
+.offscreen {
+    position: absolute;
+    top: -9999px;
+    color: white;
+}
+
+.offscreen:focus {
+    position: absolute;
+    top: 0;
 }

@@ -16,8 +16,9 @@ section {
 }
 
 img {
-    height: 100%;
-    width: auto;
+    max-height: 600px;
+    height: auto;
+    width: 100%;
     margin: auto;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
     border-radius: 30px;
@@ -28,6 +29,14 @@ img {
     height: 90%;
     display: flex;
     flex-direction: column;
+}
+
+.informations {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .category {
@@ -56,21 +65,45 @@ img {
     color: var(--in-stock-color);
 }
 
+.out-of-stock {
+    color: var(--out-stock-color);
+}
+
 .fa-shopping-cart {
     font-size: 20px;
 }
 
-@media (max-width: 768px) {
-
+@media (min-width: 768px) and (max-width: 1024px) {
     main {
+        margin: auto;
+        width: 80%;
+        height: 80%;
+        flex-direction: row;
+        display: flex;
+    }
+    
+    section {
+        height: 90%;
+        width: 50%;
         display: flex;
         flex-direction: column;
-        height: 100%;
+        margin-top: auto;
+        margin-bottom: auto;
+    }   
+}
+
+@media (max-width: 853px) {
+
+    main {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
     }
 
     section {
-        width: 100%;
-        height: auto;
+        width: auto;
+        height: 50%;
         display: flex;
         margin-right: auto;
         margin-left: auto;
@@ -78,8 +111,8 @@ img {
     }
 
     img {
-        height: auto;
-        width: 80%;
+        height: 100%;
+        width: auto;
         margin: auto;
         box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
         border-radius: 30px;
@@ -89,6 +122,15 @@ img {
         margin-left: 0;
         margin-top: 0;
         height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .informations {
+        margin-left: auto;
+        margin-right: auto;
+        height: 95%;
+        width: 80%;
         display: flex;
         flex-direction: column;
     }
