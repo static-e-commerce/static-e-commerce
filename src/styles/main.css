@@ -18,6 +18,12 @@ html, body {
     background-color: #0575AD;
 }
 
+nav {
+    background-color: var(--category-color);
+    color: var(--header-text-color);
+    width: 100%;
+}
+
 body {
     background: linear-gradient(180deg, #0575AD 3%, var(--dark-blue) 100%);
     background-repeat: no-repeat;
