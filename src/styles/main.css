@@ -4,8 +4,8 @@
     --light-blue: #8ECAE6;
     --button-color: #FFB703;
     --orange: #FB8500;
-    --in-stock-color: #F60303;
-    --out-stock-color: #04C300;
+    --out-stock-color: #F60303;
+    --in-stock-color: #04C300;
     --category-color: #EDEDED;
     --text-color: #FFFFFF;
     --header-text-color: #000000;
@@ -28,17 +28,32 @@ body {
 }
 
 p {
-    font-family: roboto;
+    font-family: 'Roboto', sans-serif;
     color: var(--text-color);
+    font-size: 24px;
 }
 
 h1 {
-    font-family: roboto;
+    font-family: 'Roboto', sans-serif;
     color: var(--text-color);
+    font-weight: bold;
+    font-size: 96px;
+    padding: 0;
+    margin: 0;
 }
 
 button {
-    font-family: roboto;
+    font-family: 'Roboto', sans-serif;
     color: var(--header-text-color);
     background-color: var(--button-color);
+    height: 4rem;
+    width: 17rem;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #eeab03;
+    transition: 0.5s;
 }
