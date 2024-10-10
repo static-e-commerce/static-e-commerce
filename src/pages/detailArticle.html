@@ -16,21 +16,31 @@
     <body>
         <a href="#main-content" class="offscreen">Aller au conntenu principale</a>
 
+        <button class="hamburger" aria-label="Menu">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        
+
         <header>
             <nav>
-              <ul>
+              <ul id="left">
                 <img src="../../resources/images/logo.webp" alt="Logo Axe & Cible" />
                 <p>Axe & Cible</p>
               </ul>
-              <a href="#Home">Home</a>
-              <a href="#">Products</a>
-              <a href="#">About</a>
-              <a href="#">Contact</a>
+              <ul id="right">
+                <a href="productList.html" class="nav-item" data-target="Products">Produits</a>
+                <a href="#" class="nav-item" data-target="Historique">Historique</a>
+                <a href="#" class="nav-item" data-target="Connexion" data-active-color="black"><i class="fa-solid fa-user"></i> Connexion</a>
+                <i role="button" class="fas fa-magnifying-glass pointer" aria-label="Rechercher"></i>
+                <p role="button" class="cart-number pointer"><i class="fas fa-shopping-cart" aria-label="Panier"></i>1</p>
+                <span class="nav-indicator"></span>
+              </ul>
             </nav>
         </header>
 
         <main>
-            <section>
+            <section class="image-produit">
                 <img src="../../resources/images/sac-a-dos.webp" alt="Sac à dos">
             </section>
             <section class="details">

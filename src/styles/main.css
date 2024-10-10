@@ -21,7 +21,6 @@ body {
     background: linear-gradient(180deg, #0575AD 3%, var(--dark-blue) 100%);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    display: flex;
 }
 
 p {
@@ -39,7 +38,7 @@ h1 {
     margin: 0;
 }
 
-button {
+button:not(.hamburger) {
     font-family: 'Roboto', sans-serif;
     color: var(--header-text-color);
     background-color: var(--button-color);
@@ -50,7 +49,7 @@ button {
     cursor: pointer;
 }
 
-button:hover {
+button:not(.hamburger):hover {
     background-color: #eeab03;
     transition: 0.5s;
 }
@@ -58,23 +57,40 @@ button:hover {
 .offscreen {
     position: absolute;
     top: -9999px;
-    color: white;
+    color: var(--dark-blue);
 }
 
 .offscreen:focus {
     position: absolute;
+    z-index: 999999;
     top: 0;
+}
+
+.hamburger {
+    display: none;
+    background-color: white;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 12px;
+    padding-right: 12px;
+    position: absolute;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+.hamburger>i {
+    padding: 0;
 }
 
 header {
   background: white;
-
   display: flex;
   flex-direction: row;
 }
 
 nav {
-  display: flex;
+    height: 80px;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
@@ -148,4 +164,38 @@ nav img {
 
 .nav-indicator {
   display: none;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.fa-user {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.fa-shopping-cart {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.cart-number {
+    padding-left: 0;
+    padding-right: 0;
+    font-weight: lighter;
+    color: rgb(75, 75, 75);
+    font-size: medium;
+    margin-left: 1rem;
+}
+
+
+@media (max-width: 853px) {
+    header {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
 }
