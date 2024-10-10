@@ -1,5 +1,3 @@
-export {}
-
 const getProductList =  async (): Promise<Article[]> => {
     try {
         const response = await fetch('../../resources/data/Articles.json')
@@ -12,11 +10,9 @@ const getProductList =  async (): Promise<Article[]> => {
 
 const displayProducts = async () => {
     const products: Article[] = await getProductList()
-    console.log(products.length);
     let content = document.getElementById('content')
     let htmlContent = ''
     for (const product of products) {
-        console.log(product);
         if(product.stock) {
             htmlContent += 
             `
