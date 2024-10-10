@@ -6,7 +6,7 @@
     "scripts": {
         "build": "tsc && npm run copy-files",
         "copy-files": "copyfiles -u 1 src/**/*.html src/**/*.css dist",
-        "start": "npm run build && lite-server",
+        "start": "npm run build",
         "serve": "lite-server"
     },
     "repository": {
