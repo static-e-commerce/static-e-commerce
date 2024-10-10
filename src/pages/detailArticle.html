@@ -16,14 +16,8 @@
     <body>
         <a href="#main-content" class="offscreen">Aller au conntenu principale</a>
 
-        <button class="hamburger" aria-label="Menu">
-            <i class="fa-solid fa-bars"></i>
-        </button>
-
-        
-
         <header>
-            <nav>
+            <nav class="nav-header">
               <ul id="left">
                 <img src="../../resources/images/logo.webp" alt="Logo Axe & Cible" />
                 <p>Axe & Cible</p>
@@ -31,9 +25,13 @@
               <ul id="right">
                 <a href="productList.html" class="nav-item" data-target="Products">Produits</a>
                 <a href="#" class="nav-item" data-target="Historique">Historique</a>
-                <a href="#" class="nav-item" data-target="Connexion" data-active-color="black"><i class="fa-solid fa-user"></i> Connexion</a>
-                <i role="button" class="fas fa-magnifying-glass pointer" aria-label="Rechercher"></i>
-                <p role="button" class="cart-number pointer"><i class="fas fa-shopping-cart" aria-label="Panier"></i>1</p>
+                <a href="#" class="nav-item" data-target="Connexion" data-active-color="black">
+                    <i class="fa-solid fa-user"></i> Connexion
+                </a>
+                <i role="button" class="fas fa-magnifying-glass pointer" aria-label="Rechercher" tabindex="0"></i>
+                <p role="button" class="cart-number pointer" tabindex="0">
+                    <i class="fas fa-shopping-cart" aria-label="Panier"></i>1
+                </p>
                 <span class="nav-indicator"></span>
               </ul>
             </nav>
@@ -54,5 +52,56 @@
                 </div>
             </section>
         </main>
+
+        <button id="menu-hamburger" class="hamburger toggle-aside" onclick="toggleAside()" aria-label="Open menu">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        
+        <aside id="menu-aside" aria-label="menu" aria-expanded="false">
+            <nav>
+                <ul class="aside-ul">
+                    <li class="logo-container">
+                        <img src="../../resources/images/logo.webp" alt="Logo Axe & Cible" />
+                        <p>Axe & Cible</p>
+                    </li>
+                    <li class="right-buttons">
+                        <a href="#" class="nav-item" data-target="Connexion" data-active-color="black" aria-label="Connexion">
+                            <i class="fa-solid fa-user"></i>
+                        </a>
+                        <i role="button" class="fas fa-magnifying-glass pointer" aria-label="Rechercher" tabindex="0"></i>
+                        <p role="button" class="cart-number pointer" tabindex="0">
+                            <i class="fas fa-shopping-cart" aria-label="Panier"></i>1
+                        </p>
+                    </li>
+                    <li class="menu-links">
+                        <a href="productList.html" class="nav-item" data-target="Products">Produits</a>
+                        <a href="#" class="nav-item" data-target="Historique">Historique</a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <script>
+            function toggleAside() {
+                const aside = document.getElementById('menu-aside');
+                const button = document.querySelector('.toggle-aside');
+                const buttonIcon = button.querySelector('i');
+                aside.classList.toggle('open');
+                button.classList.toggle('open');
+                if (buttonIcon.classList.contains('fa-bars')) {
+                    buttonIcon.classList.remove('fa-bars');
+                    buttonIcon.classList.add('fa-times');
+                    buttonIcon.ariaLabel = 'Close menu';
+                    aside.style.setProperty("visibility", "visible");
+                    aside.ariaExpanded = true;
+                } else {
+                    buttonIcon.classList.remove('fa-times');
+                    buttonIcon.classList.add('fa-bars');
+                    buttonIcon.ariaLabel = 'Open menu';
+                    aside.style.setProperty("visibility", "hidden");
+                    aside.ariaExpanded = false;
+                }
+            }
+        </script>
     </body>
 </html>
