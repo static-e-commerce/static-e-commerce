@@ -238,7 +238,7 @@ section {
     margin: 0;
     margin-right: 2vw;
     font-weight: 700;
-    width:min-content;
+    width: max-content;
     flex: 1;
     display: flex;
     align-items: center;
