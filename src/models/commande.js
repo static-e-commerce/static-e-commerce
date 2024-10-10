@@ -179,29 +179,40 @@ const articles = {
 let orders = []
 
 // Génération de commandes à partir de la liste de produits
-function generateOrders(any) {
-  orders = articles.products.map((product, index) => ({
-    id: index + 1,
-    article: product,
-    date: "17-02-2024",
-    status: "Livré",
-  }));
+function generateOrders() {
+  const allStatus = ["Livré", "En Livraison", "Annulé"];
+  const allDates = ["17-02-2024", "21-01-2023", "03-07-2022"];
+  // Mapping
+  orders = articles.products.map((product, index) => {
+    // Valeurs aléatoires parmis celles disponibles pour la date et le statut
+    const randomStatus = allStatus[Math.floor(Math.random() * allStatus.length)];
+    const randomDate = allDates[Math.floor(Math.random() * allDates.length)];
+    // Retour de la commande
+    return {
+      id: index + 1,
+      article: product,
+      date: randomDate,
+      status: randomStatus,
+    }
+  });
 }
 
 // Fonction pour afficher la liste des commandes (h3 à remplacer par lien vers la page produit)
 function displayOrders() {
   const content = document.getElementById("content");
-  content.innerHTML = `
+  content.innerHTML =
+  `
     <h2 tabindex="0">MES COMMANDES</h2>
     <hr />
     <section>
-      ${orders.map((order) => `
+      ${orders.map((order) => 
+        `
           <div id="order">
             <h3 tabindex="0">${order.article.nom}</h3>
             <p tabindex="0">Prix : ${order.article.prix}</p>
             <p tabindex="0">Date de Commande : ${order.date}</p>
-            <p tabindex="0">Statut : ${order.status}</p>
-            <button id="supportLink">Contacter Support</button>
+            <p id="status" tabindex="0">Statut : ${order.status}</p>
+            <button class="supportLink">Contacter Support</button>
           </div>
         `).join("")}
     </section>
@@ -213,9 +224,26 @@ document.getElementById("ordersLink").addEventListener("click", (event) => {
   event.preventDefault();
   generateOrders();
   displayOrders();
+  applyStatusColors();
 })
 
-// Affichage du numéro de contact support (ou autres, à voir)
+// Changement de couleur indicateur statut commande (WIP)
+function applyStatusColors() {
+  const status = document.querySelectorAll("#status");
+  status.forEach((statut) => {
+    const statusText = statut.innerText.split(" : ")[1];
+    // En fonction de son statut...
+    if (statusText === "Livré") {
+      statut.classList.add("statut-fini");
+    } else if (statusText === "En Livraison") {
+      statut.classList.add("statut-livraison");
+    } else if (statusText === "Annulé") {
+      statut.classList.add("statut-annule");
+    }
+  })
+}
+
+// Affichage du numéro de contact support (WIP)
 function displayContacts() {
   const content = document.getElementById("content");
   content.innerHTML = `
@@ -227,10 +255,11 @@ function displayContacts() {
   `
 }
 
-// Rediriger vers la page "Contacts" en cliquant sur le bouton de demande support
+// Rediriger vers la page "Contacts" en cliquant sur le bouton de demande support (WIP)
 window.addEventListener("DOMContentLoaded", (event) => {
-  const button = document.getElementById("supportLink");
-  button.onclick(() => { 
-    displayContacts();
+  document.querySelectorAll("#supportLink").forEach((button) => {
+    button.addEventListener("click", () => {
+      displayContacts()
+    });
   });
-})
+});

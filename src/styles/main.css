@@ -4,8 +4,8 @@
     --light-blue: #8ECAE6;
     --button-color: #FFB703;
     --orange: #FB8500;
-    --in-stock-color: #F60303;
-    --out-stock-color: #04C300;
+    --out-stock-color: #F60303;
+    --in-stock-color: #04C300;
     --category-color: #EDEDED;
     --text-color: #FFFFFF;
     --header-text-color: #000000;
@@ -75,19 +75,20 @@ section {
     width: 95%;
     height: 125px;
     padding: 5px;
-    border: 1px solid var(--light-gray);
+    border: 1px solid transparent;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     border-bottom-color: var(--light-blue);
     border-bottom-style: dashed;
     border-bottom-width: 1px;
+    border-radius: 5px;
 }
 
 #order h3 {
     text-decoration: underline;
-    width: 15%;
+    width: 20%;
     margin: 0;
     overflow: hidden;
     margin-right: 10px;
@@ -99,15 +100,38 @@ section {
     color: white;
     font-weight: 800;
     width: max-content;
+    flex: 1;
+    display: flex;
+    align-items: center;
 }
 
 #order div {
     flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-#order button {
-    height: 55px;
+.supportLink {
+    height: 50px;
     width: 150px;
     border-radius: 1em;
     font-weight: bold;
+    font-family: roboto;
+    color: var(--header-text-color);
+    background-color: var(--button-color);
+    padding: 0;
+}
+
+/* Styles pour les statuts */
+.statut-fini {
+  color: var(--in-stock-color);
+}
+
+.statut-livraison {
+  color: var(--orange);
+}
+
+.statut-annule {
+  color: var(--out-stock-color);
 }
