@@ -16,7 +16,6 @@ section {
 }
 
 img {
-    max-height: 600px;
     height: auto;
     width: 100%;
     margin: auto;
@@ -71,25 +70,6 @@ img {
 
 .fa-shopping-cart {
     font-size: 20px;
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
-    main {
-        margin: auto;
-        width: 80%;
-        height: 80%;
-        flex-direction: row;
-        display: flex;
-    }
-    
-    section {
-        height: 90%;
-        width: 50%;
-        display: flex;
-        flex-direction: column;
-        margin-top: auto;
-        margin-bottom: auto;
-    }   
 }
 
 @media (max-width: 853px) {
