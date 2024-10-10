@@ -199,24 +199,33 @@ function generateOrders() {
 
 // Fonction pour afficher la liste des commandes (h3 à remplacer par lien vers la page produit)
 function displayOrders() {
-  const content = document.getElementById("content");
-  content.innerHTML =
-  `
+  const content = document.getElementById("content")
+  content.innerHTML = `
     <h2 tabindex="0">MES COMMANDES</h2>
     <hr />
     <section>
-      ${orders.map((order) => 
-        `
-          <div id="order">
+      ${orders
+        .map(
+          (order) =>
+            `
+          <div class="order">
             <h3 tabindex="0">${order.article.nom}</h3>
-            <p tabindex="0">Prix : ${order.article.prix}</p>
-            <p tabindex="0">Date de Commande : ${order.date}</p>
-            <p id="status" tabindex="0">Statut : ${order.status}</p>
+            <p tabindex="0">Prix : ${order.article.prix}€</p>
+            <p tabindex="0">Commandé le : ${order.date}</p>
+            <p class="status" tabindex="0">${order.status}</p>
             <button class="supportLink">Contacter Support</button>
           </div>
-        `).join("")}
+        `
+        )
+        .join("")}
     </section>
   `
+  // Affiche la page de contact support lorsque le bouton correspondant est cliqué
+  document.querySelectorAll(".supportLink").forEach((button) => {
+    button.addEventListener("click", () => {
+      displayContacts() // Appelle la fonction pour afficher les contacts
+    });
+  });
 }
 
 // Rediriger vers la page "Commandes" en cliquant sur l'icône correspondante de la navbar
@@ -225,13 +234,13 @@ document.getElementById("ordersLink").addEventListener("click", (event) => {
   generateOrders();
   displayOrders();
   applyStatusColors();
-})
+});
 
 // Changement de couleur indicateur statut commande (WIP)
 function applyStatusColors() {
-  const status = document.querySelectorAll("#status");
+  const status = document.querySelectorAll(".status");
   status.forEach((statut) => {
-    const statusText = statut.innerText.split(" : ")[1];
+    const statusText = statut.innerText;
     // En fonction de son statut...
     if (statusText === "Livré") {
       statut.classList.add("statut-fini");
@@ -240,7 +249,7 @@ function applyStatusColors() {
     } else if (statusText === "Annulé") {
       statut.classList.add("statut-annule");
     }
-  })
+  });
 }
 
 // Affichage du numéro de contact support (WIP)
@@ -250,16 +259,19 @@ function displayContacts() {
     <h2>CONTACTS</h2>
     <hr />
     <section>
-      <p>Contactez le support au numéro suivant : 07 12 13 14 15 16</p>
+      <p tabindex="0">Contactez le support au numéro suivant :</p>
+      <h4 tabindex="0">07 12 13 14 15 16</h4>
+      <br>
+      <p tabindex="0">Si vous n'arrivez pas à nous joindre, contactez nous via notre adresse mail :</p>
+      <h4 tabindex="0">e-support@gmail.com</h4>
+      <img
+        title="photo d'un membre d'une équipe support souriant"
+        alt="photo d'un membre d'une équipe support souriant"
+        src="../../resources/images/support.jpg"
+        width="85%"
+        height="auto"
+        tabindex="0"
+      />
     </section>
   `
 }
-
-// Rediriger vers la page "Contacts" en cliquant sur le bouton de demande support (WIP)
-window.addEventListener("DOMContentLoaded", (event) => {
-  document.querySelectorAll("#supportLink").forEach((button) => {
-    button.addEventListener("click", () => {
-      displayContacts()
-    });
-  });
-});

@@ -1,11 +1,11 @@
 :root {
     --dark-blue: #023047;
     --blue: #219EBC;
-    --light-blue: #8ECAE6;
+    --light-blue: #A3D4EB;
     --button-color: #FFB703;
     --orange: #FB8500;
     --out-stock-color: #F60303;
-    --in-stock-color: #04C300;
+    --in-stock-color: #04F000;
     --category-color: #EDEDED;
     --text-color: #FFFFFF;
     --header-text-color: #000000;
@@ -15,6 +15,7 @@ html, body {
     margin: 0;
     padding: 0;
     background-color: #0575AD;
+    font-family: roboto;
 }
 
 nav {
@@ -37,18 +38,19 @@ div {
 }
 
 p {
-    font-family: roboto;
     color: var(--text-color);
 }
 
 h1, h2, h4 {
-    font-family: roboto;
     color: var(--text-color);
 }
 
+h2 {
+    font-size: xx-large;
+}
+
 h3 {
-    font-family: roboto;
-    color: var(--orange);
+    color: var(--category-color);
 }
 
 button {
@@ -71,13 +73,13 @@ section {
     padding: 0;
 }
 
-#order {
+.order {
     width: 95%;
     height: 125px;
     padding: 5px;
     border: 1px solid transparent;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     border-bottom-color: var(--light-blue);
@@ -86,26 +88,28 @@ section {
     border-radius: 5px;
 }
 
-#order h3 {
+.order h3 {
     text-decoration: underline;
+    font-style: oblique;
     width: 20%;
     margin: 0;
     overflow: hidden;
-    margin-right: 10px;
+    margin-right: 2vw;
+    color: var(--light-blue);
 }
 
-#order p {
+.order p {
     margin: 0;
-    margin-right: 5px;
-    color: white;
-    font-weight: 800;
-    width: max-content;
+    margin-right: 2vw;
+    font-weight: 700;
+    width:min-content;
     flex: 1;
     display: flex;
     align-items: center;
+    overflow-wrap: normal;
 }
 
-#order div {
+.order div {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
@@ -129,9 +133,9 @@ section {
 }
 
 .statut-livraison {
-  color: var(--orange);
+  color: #FFBF75;
 }
 
 .statut-annule {
-  color: var(--out-stock-color);
+  color: #FDBABA;
 }
