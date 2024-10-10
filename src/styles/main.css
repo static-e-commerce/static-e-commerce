@@ -374,7 +374,14 @@ header {
           display: none;
       }
   }
-=======
+  .supportLink {
+    height: 50px;
+    width: 150px;
+    border-radius: 1em;
+    font-weight: bold;
+    font-family: roboto;
+    color: var(--header-text-color);
+    background-color: var(--button-color);
     padding: 0;
 }
 
