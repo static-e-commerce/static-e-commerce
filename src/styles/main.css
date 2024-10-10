@@ -11,9 +11,9 @@
   --header-text-color: #000000;
 }
 
-html,
-body {
-  height: 100%;
+/***** CSS GENERAL *****/
+
+html, body {
   margin: 0;
   padding: 0;
   background-color: #0575ad;
@@ -21,6 +21,7 @@ body {
 
 main {
   padding-top: 80px;
+  width: 100%;
 }
 
 nav {
@@ -33,9 +34,7 @@ body {
   background: linear-gradient(180deg, #0575ad 3%, var(--dark-blue) 100%);
   background-repeat: no-repeat;
   background-attachment: fixed;
-  min-height: 100%;
   display: flex;
-  flex-direction: column;
 }
 
 div {
@@ -68,11 +67,11 @@ button {
 
 header {
   background: white;
-
   display: flex;
   flex-direction: row;
 }
 
+/***** CSS NAVIGATION *****/
 nav {
   display: flex;
   flex-direction: row;
@@ -192,7 +191,7 @@ section {
     margin: 0;
     margin-right: 2vw;
     font-weight: 700;
-    width:min-content;
+    width: max-content;
     flex: 1;
     display: flex;
     align-items: center;

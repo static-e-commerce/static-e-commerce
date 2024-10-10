@@ -228,6 +228,13 @@ function displayOrders() {
   });
 }
 
+//test
+function loading() {
+  generateOrders();
+  displayOrders();
+  applyStatusColors();
+}
+
 // Rediriger vers la page "Commandes" en cliquant sur l'icône correspondante de la navbar
 document.getElementById("ordersLink").addEventListener("click", (event) => {
   event.preventDefault();
