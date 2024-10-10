@@ -12,7 +12,6 @@
 }
 
 html, body {
-    height: 100%;
     margin: 0;
     padding: 0;
     background-color: #0575AD;
@@ -33,18 +32,82 @@ body {
     flex-direction: column;
 }
 
+div {
+    padding: 1%;
+}
+
 p {
     font-family: roboto;
     color: var(--text-color);
 }
 
-h1 {
+h1, h2, h4 {
     font-family: roboto;
     color: var(--text-color);
+}
+
+h3 {
+    font-family: roboto;
+    color: var(--orange);
 }
 
 button {
     font-family: roboto;
     color: var(--header-text-color);
     background-color: var(--button-color);
+    height: auto;
+}
+
+/***** CSS PAGE COMMANDES *****/
+
+hr {
+    width: 95%;
+    margin-left: 0;
+    border: 1px black white;
+}
+
+section {
+    margin: 0;
+    padding: 0;
+}
+
+#order {
+    width: 95%;
+    height: 125px;
+    padding: 5px;
+    border: 1px solid var(--light-gray);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-bottom-color: var(--light-blue);
+    border-bottom-style: dashed;
+    border-bottom-width: 1px;
+}
+
+#order h3 {
+    text-decoration: underline;
+    width: 15%;
+    margin: 0;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+#order p {
+    margin: 0;
+    margin-right: 5px;
+    color: white;
+    font-weight: 800;
+    width: max-content;
+}
+
+#order div {
+    flex-grow: 1;
+}
+
+#order button {
+    height: 55px;
+    width: 150px;
+    border-radius: 1em;
+    font-weight: bold;
 }

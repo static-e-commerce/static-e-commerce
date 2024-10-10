@@ -1,3 +1,5 @@
+//**************** !!! ANCIEN FICHIER CONSERVE EN BACK-UP, IGNORER POUR LE MOMENT !!! ****************//
+
 import articles from "../../resources/data/Articles.json"
 
 interface Commande {
@@ -44,6 +46,7 @@ function displayOrders() {
 // Rediriger vers la page "Commandes" en cliquant sur l'icône correspondante de la navbar
 // !!! WIP !!!
 document.getElementById("ordersLink")!.addEventListener("click", (event) => {
-  event.preventDefault()
-  displayOrders()
+  event.preventDefault();
+  generateOrders();
+  displayOrders();
 })
