@@ -41,14 +41,6 @@
         "image": "../../resources/images/table-basse.webp"
       },
       {
-        "nom": "Montre connectée sport",
-        "description": "Montre connectée avec suivi d'activité, fréquence cardiaque, et notifications en temps réel.",
-        "prix": 119.99,
-        "catégorie": "Électronique",
-        "stock": false,
-        "image": "../../resources/images/montre-connectee.webp"
-      },
-      {
         "nom": "Cafetière italienne",
         "description": "Cafetière en aluminium pour espresso, compatible avec les plaques à induction.",
         "prix": 29.99,
@@ -87,22 +79,6 @@
         "catégorie": "Électronique",
         "stock": true,
         "image": "../../resources/images/ecouteurs-sans-fil.webp"
-      },
-      {
-        "nom": "Batteur électrique",
-        "description": "Batteur électrique avec 5 vitesses et fouets en acier inoxydable.",
-        "prix": 19.99,
-        "catégorie": "Cuisine",
-        "stock": false,
-        "image": "../../resources/images/batteur-electrique.webp"
-      },
-      {
-        "nom": "Smartphone 5G",
-        "description": "Smartphone 6,5 pouces avec 128 Go de stockage, appareil photo 48MP et connectivité 5G.",
-        "prix": 499.99,
-        "catégorie": "Électronique",
-        "stock": true,
-        "image": "../../resources/images/smartphone-5g.webp"
       },
       {
         "nom": "Four à micro-ondes avec grill",

@@ -1,14 +1,19 @@
 :root {
     --dark-blue: #023047;
     --blue: #219EBC;
-    --light-blue: #8ECAE6;
-    --button-color: #FFB703;
+    --light-blue: #A3D4EB;
+    --button-color: #FFBF75;
     --orange: #FB8500;
     --in-stock-color: #F60303;
-    --out-stock-color: #04C300;
+    --out-stock-color: #04F000;
     --category-color: #EDEDED;
     --text-color: #FFFFFF;
     --header-text-color: #000000;
+}
+
+p {
+    padding: 0;
+    margin: 0;
 }
 
 html, body {
@@ -32,7 +37,7 @@ p {
     color: var(--text-color);
 }
 
-h1 {
+h1, h2, h3 {
     font-family: roboto;
     color: var(--text-color);
 }
@@ -42,3 +47,116 @@ button {
     color: var(--header-text-color);
     background-color: var(--button-color);
 }
+
+header {
+    background: white;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  nav {
+      height: 80px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    overflow: hidden;
+    overflow-x: auto;
+    position: fixed;
+  }
+  
+  nav * {
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  nav p {
+    color: black;
+    padding-left: 16px;
+    margin: 0px;
+    font-weight: bold;
+  }
+  
+  nav ul {
+    margin: 0;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  nav ul#left {
+    padding-left: 80px;
+    font-size: 30px;
+  }
+  
+  nav ul#right {
+    padding-right: 80px;
+    font-size: 20px;
+  }
+  
+  nav ul div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  nav ul * {
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+  }
+  
+  nav img {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .nav-item:not(.is-active):hover {
+    color: black;
+    border-bottom: gray 5px solid;
+    border-radius: 0 0 4px 4px;
+  }
+  
+  .nav-item.is-active {
+    color: black;
+    border-bottom: black 5px solid;
+    border-radius: 0 0 4px 4px;
+  }
+  
+  .nav-indicator {
+    display: none;
+  }
+  
+  .pointer {
+      cursor: pointer;
+  }
+  
+  .fa-user {
+      padding-left: 0;
+      padding-right: 0;
+  }
+  
+  .fa-shopping-cart {
+      padding-right: 0;
+      padding-left: 0;
+  }
+  
+  .cart-number {
+      padding-left: 0;
+      padding-right: 0;
+      font-weight: lighter;
+      color: rgb(75, 75, 75);
+      font-size: medium;
+      margin-left: 1rem;
+  }
+  
+  
+  @media (max-width: 853px) {
+      header {
+          display: none;
+      }
+  }
