@@ -43,7 +43,7 @@ function displayOrders(orders: Order[]) {
     <section>
     ${orders.map((order) =>
       `
-      <div class="order">
+      <div class="order" role="region" aria-label="article">
         <p class="article-title" tabindex="0">${order.article.nom}</p>
         <p>Prix : ${order.article.prix}€</p>
         <p>Commandé le : ${order.date}</p>

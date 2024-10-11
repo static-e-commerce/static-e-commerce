@@ -17,7 +17,7 @@ const displayRecommendedProducts = async () => {
     for (const product of productsRecommended) {
         if (product.stock) {
             htmlContent += `
-            <div class="card">
+            <div class="card" role="region" aria-label="article">
                 <a href="detailArticle.html"><img src='${product.image}' class="img" alt="${product.nom}" role="button"></a>
                 <h3>${product.nom}</h3>
                 <p>${product.categorie}</p>
@@ -35,7 +35,7 @@ const displayRecommendedProducts = async () => {
         }
         else {
             htmlContent += `
-            <div class="card">
+            <div class="card" role="region" aria-label="article">
                 <a href="detailArticle.html"><img src='${product.image}' class="img" alt="${product.nom}" role="button"></a>
                 <h3>${product.nom}</h3>
                 <p>${product.categorie}</p>
@@ -63,7 +63,7 @@ const displayProductsByCategory = async (category) => {
         if (product.stock) {
             htmlContent +=
                 `
-            <div class="card-${category}">
+            <div class="card-${category}" role="region" aria-label="article">
                 <a href="detailArticle.html"><img src='${product.image}' class="img" alt="${product.nom}" role="button"></a>
                 <h3>${product.nom}</h3>
                 <p class="description">${product.description}</p>
@@ -80,7 +80,7 @@ const displayProductsByCategory = async (category) => {
         }
         else {
             htmlContent += `
-            <div class="card-${category}">
+            <div class="card-${category}" role="region" aria-label="article">
                 <a href="detailArticle.html"><img src='${product.image}' class="img" alt="${product.nom}" role="button"></a>
                 <h3>${product.nom}</h3>
                 <p class="description">${product.description}</p>

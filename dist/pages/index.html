@@ -15,6 +15,9 @@
     <!-- Styles -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="../styles/productList.css">
+    <link rel="stylesheet" href="../styles/productListMobile.css">
+    <link rel="stylesheet" href="../styles/mainMobile.css">
+    <link rel="stylesheet" href="../styles/mobileMenu.css">
 </head>
 <body>
     <a href="#main-content" class="skip-link">
@@ -33,9 +36,12 @@
           <ul id="right">
             <a href="index.html" class="nav-item" data-target="Products">Produits</a>
             <a href="orders.html" class="nav-item" data-target="Historique">Historique</a>
-            <a href="login.html" class="nav-item" data-target="Connexion" data-active-color="black">
-                <i class="fa-solid fa-user"></i> Connexion
-            </a>
+            <div id="loginContainer">
+                <a href="login.html" id="loginLink" class="nav-item" data-target="Connexion" data-active-color="black">
+                    <i class="fa-solid fa-user"></i>
+                    <span id="loginText">Connexion</span>
+                </a>
+            </div>
             <i role="button" class="fas fa-magnifying-glass pointer" aria-label="Rechercher" tabindex="0"></i>
             <p role="button" class="cart-number pointer" tabindex="0">
                 <i class="fas fa-shopping-cart" aria-label="Panier"></i>1
@@ -47,69 +53,83 @@
 
     <main id="main-content">
         <h2>Liste de produits</h2>
-        <div class="wrap">
-            <h2>Nos recommandations</h2>
-            <!-- <div class="line"></div> -->
-        </div>
-        <section>
-            <div class="container">
-
+        <div role="region" aria-label="nos recommandations">
+            <div class="wrap">
+                <h2>Nos recommandations</h2>
+                <div class="line"></div>
             </div>
-        </section>
-        <div class="wrap">
-            <h2>Sport</h2>
-             <!-- <div class="line"></div> -->
+            <section>
+                <div class="container">
+    
+                </div>
+            </section>
         </div>
-        <section>
-            <div class="container-sport">
-                
+        <div role="region" aria-label="Sport">
+            <div class="wrap">
+                <h2>Sport</h2>
+                <div class="line"></div>
             </div>
-        </section>
-        <div class="wrap">
-            <h2>Mobilier</h2>
-           <!-- <div class="line"></div> -->
+            <section>
+                <div class="container-sport">
+                    
+                </div>
+            </section>
         </div>
-        <section>
-            <div class="container-mobilier">
-                
+        <div role="region" aria-label="Mobilier">
+            <div class="wrap">
+                <h2>Mobilier</h2>
+                <div class="line"></div>
             </div>
-        </section>
-        <div class="wrap">
-            <h2>Éclairage</h2>
-           <!-- <div class="line"></div> -->
+            <section>
+                <div class="container-mobilier">
+                    
+                </div>
+            </section>
         </div>
-        <section>
-            <div class="container-éclairage">
-                
+        <div role="region" aria-label="Eclairage">
+            <div class="wrap">
+                <h2>Éclairage</h2>
+                <div class="line"></div>
             </div>
-        </section>
-        <div class="wrap">
-            <h2>Électronique</h2>
-          <!-- <div class="line"></div> -->
+            <section>
+                <div class="container-éclairage">
+                    
+                </div>
+            </section>
         </div>
-        <section>
-            <div class="container-électronique">
-                
+        <div role="region" aria-label="Electronique">
+            <div class="wrap">
+                <h2>Électronique</h2>
+                <div class="line"></div>
             </div>
-        </section>
-        <div class="wrap">
-            <h2>Cuisine</h2>
-           <!-- <div class="line"></div> -->
+            <section>
+                <div class="container-électronique">
+                    
+                </div>
+            </section>
         </div>
-        <section>
-            <div class="container-cuisine">
-                
+        <div role="region" aria-label="Cuisine">
+            <div class="wrap">
+                <h2>Cuisine</h2>
+                <div class="line"></div>
             </div>
-        </section>
-        <div class="wrap">
-            <h2>Électroménager</h2>
-           <!-- <div class="line"></div> -->
+            <section>
+                <div class="container-cuisine">
+                    
+                </div>
+            </section>
         </div>
-        <section>
-            <div class="container-électroménager">
-                
+        <div role="region" aria-label="Elecromenager">
+            <div class="wrap">
+                <h2>Électroménager</h2>
+                <div class="line"></div>
             </div>
-        </section>
+            <section>
+                <div class="container-électroménager">
+                    
+                </div>
+            </section>
+        </div>
     </main>
     <footer id="footer" tabindex="0">
         <p>&copy; 2024 Axe & Cible. Tous droits réservés.</p>
@@ -123,5 +143,6 @@
         </div>
     </footer>
     <script type="module" src="../../dist/components/productList.js"></script>
+    <script type="module" src="../../dist/components/header.js"></script>
 </body>
 </html>

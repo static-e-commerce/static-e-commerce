@@ -33,15 +33,13 @@ function displayOrders(orders) {
     const content = document.getElementById("content");
     content.innerHTML =
         `
-    <h2 tabindex="0">MES COMMANDES</h2>
-    <hr />
     <section>
     ${orders.map((order) => `
-      <div class="order">
-        <h3 tabindex="0">${order.article.nom}</h3>
-        <p tabindex="0">Prix : ${order.article.prix}€</p>
-        <p tabindex="0">Commandé le : ${order.date}</p>
-        <p class="status" tabindex="0">${order.status}</p>
+      <div class="order" role="region" aria-label="article">
+        <p class="article-title" tabindex="0">${order.article.nom}</p>
+        <p>Prix : ${order.article.prix}€</p>
+        <p>Commandé le : ${order.date}</p>
+        <p class="status">${order.status}</p>
         <button class="supportLink">Contacter Support</button>
       </div>
       `).join("")}
@@ -79,25 +77,25 @@ function displayContacts() {
     <h2>CONTACTS</h2>
     <hr />
     <section>
-      <p tabindex="0">Contactez le support au numéro suivant :</p>
-      <h4 tabindex="0">07 12 13 14 15 16</h4>
+      <p>Contactez le support au numéro suivant :</p>
+      <h4>07 12 13 14 15 16</h4>
       <br>
-      <p tabindex="0">Si vous n'arrivez pas à nous joindre, contactez nous via notre adresse mail :</p>
-      <h4 tabindex="0">e-support@gmail.com</h4>
+      <p>Si vous n'arrivez pas à nous joindre, contactez nous via notre adresse mail :</p>
+      <h4>e-support@gmail.com</h4>
       <img
         title="photo d'un membre d'une équipe support souriant"
         alt="photo d'un membre d'une équipe support souriant"
         src="../../resources/images/support.jpg"
         width="85%"
         height="auto"
-        tabindex="0"
       />
     </section>
   `;
 }
 (async () => {
     const products = await fetchProductList();
-    const orders = generateOrders(products);
+    const productsToUse = products.filter((product) => product.prix > 100);
+    const orders = generateOrders(productsToUse);
     displayOrders(orders);
     applyStatusColors();
 })();
