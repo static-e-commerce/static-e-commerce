@@ -91,7 +91,7 @@ const displayProductsByCategory = async (category: string) => {
                 </div>
                 <div class="bottom-card">
                     <p>${product.prix}€</p>
-                    <button class="main-content" disabled><i class="fas fa-shopping-cart"></i> Ajouter au panier</button>
+                    <button class="main-content"><i class="fas fa-shopping-cart"></i> Ajouter au panier</button>
                 </div>
             </div>
             `

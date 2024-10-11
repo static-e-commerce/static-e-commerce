@@ -4,7 +4,7 @@
         "nom": "Chaise de bureau ergonomique",
         "description": "Chaise de bureau avec support lombaire, ajustable en hauteur et accoudoirs pliables.",
         "prix": 129.99,
-        "catégorie": "Mobilier",
+        "categorie": "Mobilier",
         "stock": true,
         "image": "../../resources/images/chaise-bureau.webp"
       },
@@ -12,7 +12,7 @@
         "nom": "Lampe de chevet LED",
         "description": "Lampe moderne avec éclairage LED réglable et fonction tactile pour allumage.",
         "prix": 39.99,
-        "catégorie": "Éclairage",
+        "categorie": "Éclairage",
         "stock": false,
         "image": "../../resources/images/lampe-led.webp"
       },
@@ -20,7 +20,7 @@
         "nom": "Casque audio sans fil",
         "description": "Casque Bluetooth avec réduction de bruit active et autonomie de 20 heures.",
         "prix": 89.99,
-        "catégorie": "Électronique",
+        "categorie": "Électronique",
         "stock": true,
         "image": "../../resources/images/casque-sans-fil.webp"
       },
@@ -28,7 +28,7 @@
         "nom": "Tapis de yoga antidérapant",
         "description": "Tapis de yoga écologique en caoutchouc, parfait pour des séances de méditation et d'étirements.",
         "prix": 24.99,
-        "catégorie": "Sport",
+        "categorie": "Sport",
         "stock": true,
         "image": "../../resources/images/tapis-yoga.webp"
       },
@@ -36,7 +36,7 @@
         "nom": "Table basse scandinave",
         "description": "Table basse au design minimaliste avec des pieds en bois de hêtre et plateau blanc.",
         "prix": 149.99,
-        "catégorie": "Mobilier",
+        "categorie": "Mobilier",
         "stock": true,
         "image": "../../resources/images/table-basse.webp"
       },
@@ -44,7 +44,7 @@
         "nom": "Cafetière italienne",
         "description": "Cafetière en aluminium pour espresso, compatible avec les plaques à induction.",
         "prix": 29.99,
-        "catégorie": "Cuisine",
+        "categorie": "Cuisine",
         "stock": true,
         "image": "../../resources/images/cafetiere-italienne.webp"
       },
@@ -52,7 +52,7 @@
         "nom": "Couverts en acier inoxydable",
         "description": "Set de 24 couverts en acier inoxydable avec un design moderne et élégant.",
         "prix": 59.99,
-        "catégorie": "Cuisine",
+        "categorie": "Cuisine",
         "stock": true,
         "image": "../../resources/images/couverts-inox.webp"
       },
@@ -60,7 +60,7 @@
         "nom": "Sac à dos de randonnée",
         "description": "Sac à dos étanche avec compartiment pour sac de couchage et poches multiples.",
         "prix": 79.99,
-        "catégorie": "Sport",
+        "categorie": "Sport",
         "stock": false,
         "image": "../../resources/images/sac-a-dos.webp"
       },
@@ -68,7 +68,7 @@
         "nom": "Machine à laver compacte",
         "description": "Machine à laver compacte 7kg avec options d'économie d'eau et d'énergie.",
         "prix": 299.99,
-        "catégorie": "Électroménager",
+        "categorie": "Électroménager",
         "stock": true,
         "image": "../../resources/images/machine-a-laver.webp"
       },
@@ -76,7 +76,7 @@
         "nom": "Écouteurs sans fil",
         "description": "Écouteurs Bluetooth avec boîtier de charge rapide et réduction de bruit.",
         "prix": 59.99,
-        "catégorie": "Électronique",
+        "categorie": "Électronique",
         "stock": true,
         "image": "../../resources/images/ecouteurs-sans-fil.webp"
       },
@@ -84,7 +84,7 @@
         "nom": "Four à micro-ondes avec grill",
         "description": "Micro-ondes avec fonction grill, 800W et capacité de 23 litres.",
         "prix": 99.99,
-        "catégorie": "Électroménager",
+        "categorie": "Électroménager",
         "stock": false,
         "image": "../../resources/images/four-micro-ondes.webp"
       },
@@ -92,7 +92,7 @@
         "nom": "Vélo électrique pliable",
         "description": "Vélo électrique avec moteur 250W, batterie amovible et cadre pliable pour un rangement facile.",
         "prix": 799.99,
-        "catégorie": "Transport",
+        "categorie": "Transport",
         "stock": true,
         "image": "../../resources/images/velo-electrique.webp"
       },
@@ -100,7 +100,7 @@
         "nom": "Grille-pain en acier inoxydable",
         "description": "Grille-pain avec 7 niveaux de brunissage, fonction décongélation et réchauffage.",
         "prix": 34.99,
-        "catégorie": "Cuisine",
+        "categorie": "Cuisine",
         "stock": true,
         "image": "../../resources/images/grille-pain.webp"
       },
@@ -108,7 +108,7 @@
         "nom": "Lunettes de soleil polarisées",
         "description": "Lunettes de soleil avec verres polarisés anti-reflets et protection UV400.",
         "prix": 24.99,
-        "catégorie": "Accessoires",
+        "categorie": "Accessoires",
         "stock": false,
         "image": "../../resources/images/lunettes-soleil.webp"
       },
@@ -116,7 +116,7 @@
         "nom": "Imprimante multifonction",
         "description": "Imprimante 3-en-1 avec scanner, photocopieur et connectivité Wi-Fi.",
         "prix": 159.99,
-        "catégorie": "Électronique",
+        "categorie": "Électronique",
         "stock": true,
         "image": "../../resources/images/imprimante.webp"
       },
@@ -124,7 +124,7 @@
         "nom": "Gants de cyclisme",
         "description": "Gants de cyclisme antidérapants avec rembourrage et fermeture velcro.",
         "prix": 19.99,
-        "catégorie": "Sport",
+        "categorie": "Sport",
         "stock": true,
         "image": "../../resources/images/gants-cyclisme.webp"
       }

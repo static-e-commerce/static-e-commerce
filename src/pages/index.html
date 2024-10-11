@@ -1,67 +1,112 @@
+<!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta />
-    <title>Axe & Cible</title>
-    <link rel="stylesheet" href="../styles/main.css" />
-  </head>
-  <body>
-    <!-- Header -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Découvrez une vaste sélection de produits de qualité : électronique, mode, maison, jouets et bien plus encore. Profitez de prix compétitifs, livraison rapide, et un service client exceptionnel. Magasinez en toute confiance sur notre plateforme sécurisée.">
+    <title>Liste de produits</title>
+    <!-- Icon -->
+    <link rel="icon" href="../../resources/images/icon.ico" type="image/x-icon">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../styles/productList.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">
+        Passer au contenu principal
+    </a>
     <header>
-      <nav class="nav-header">
-        <ul id="left">
-          <img src="../../resources/images/logo.webp" alt="Logo Axe & Cible" />
-          <p>Axe & Cible</p>
-        </ul>
-        <ul id="right">
-          <a href="productList.html" class="nav-item" data-target="Products">Produits</a>
-          <a href="orders.html" class="nav-item" data-target="Historique">Historique</a>
-          <a href="login.html" class="nav-item" data-target="Connexion" data-active-color="black">
-              <i class="fa-solid fa-user"></i> Connexion
-          </a>
-          <i role="button" class="fas fa-magnifying-glass pointer" aria-label="Rechercher" tabindex="0"></i>
-          <p role="button" class="cart-number pointer" tabindex="0">
-              <i class="fas fa-shopping-cart" aria-label="Panier"></i>1
-          </p>
-          <span class="nav-indicator"></span>
-        </ul>
-      </nav>
-  </header>
-    <!-- Main -->
-    <main>
-      <section>
-        <h1>Welcome to our store</h1>
-        <p>Check out our products</p>
-      </section>
+        <nav class="nav-header">
+          <ul id="left">
+            <img src="../../resources/images/logo.webp" alt="Logo Axe & Cible" />
+            <p>Axe & Cible</p>
+          </ul>
+          <ul id="right">
+            <a href="index.html" class="nav-item" data-target="Products">Produits</a>
+            <a href="orders.html" class="nav-item" data-target="Historique">Historique</a>
+            <a href="login.html" class="nav-item" data-target="Connexion" data-active-color="black">
+                <i class="fa-solid fa-user"></i> Connexion
+            </a>
+            <i role="button" class="fas fa-magnifying-glass pointer" aria-label="Rechercher" tabindex="0"></i>
+            <p role="button" class="cart-number pointer" tabindex="0">
+                <i class="fas fa-shopping-cart" aria-label="Panier"></i>1
+            </p>
+            <span class="nav-indicator"></span>
+          </ul>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <h2>Liste de produits</h2>
+        <div class="wrap">
+            <h2>Nos recommandations</h2>
+            <div class="line"></div>
+        </div>
+        <section>
+            <div class="container">
+
+            </div>
+        </section>
+        <div class="wrap">
+            <h2>Sport</h2>
+            <div class="line"></div>
+        </div>
+        <section>
+            <div class="container-sport">
+                
+            </div>
+        </section>
+        <div class="wrap">
+            <h2>Mobilier</h2>
+            <div class="line"></div>
+        </div>
+        <section>
+            <div class="container-mobilier">
+                
+            </div>
+        </section>
+        <div class="wrap">
+            <h2>Éclairage</h2>
+            <div class="line"></div>
+        </div>
+        <section>
+            <div class="container-éclairage">
+                
+            </div>
+        </section>
+        <div class="wrap">
+            <h2>Électronique</h2>
+            <div class="line"></div>
+        </div>
+        <section>
+            <div class="container-électronique">
+                
+            </div>
+        </section>
+        <div class="wrap">
+            <h2>Cuisine</h2>
+            <div class="line"></div>
+        </div>
+        <section>
+            <div class="container-cuisine">
+                
+            </div>
+        </section>
+        <div class="wrap">
+            <h2>Électroménager</h2>
+            <div class="line"></div>
+        </div>
+        <section>
+            <div class="container-électroménager">
+                
+            </div>
+        </section>
     </main>
-  </body>
-  <script>
-    const indicator = document.querySelector(".nav-indicator");
-    const items = document.querySelectorAll(".nav-item");
 
-    function handleIndicator(el) {
-      // Boucler sur items -> retirer la classe "is-active"
-      items.forEach((item) => {
-        item.classList.remove("is-active");
-        item.removeAttribute("style");
-      });
-
-      const target = el.dataset.target;
-
-      // Styliser l'indicateur
-      indicator.style.width = `${el.offsetWidth}px`;
-      indicator.style.left = `${el.offsetLeft}px`;
-
-      // Ajout la classe is-active
-      el.classList.add("is-active");
-    }
-
-    items.forEach((item, index) => {
-      item.addEventListener("click", (e) => {
-        handleIndicator(e.target);
-      });
-      item.classList.contains("is-active") && handleIndicator(item);
-    });
-  </script>
+    <script type="module" src="../components/productList.js"></script>
+</body>
 </html>
