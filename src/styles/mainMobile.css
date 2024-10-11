@@ -1,0 +1,9 @@
+@media (max-width: 853px) {
+    header {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}

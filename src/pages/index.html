@@ -14,7 +14,7 @@
   <body>
     <!-- Header -->
     <header>
-      <nav>
+      <nav class="nav-header">
         <ul id="left">
           <img src="../../resources/images/logo.webp" alt="Logo Axe & Cible" />
           <p>Axe & Cible</p>
@@ -23,37 +23,32 @@
           <a href="productList.html" class="nav-item" data-target="Products"
             >Produits</a
           >
-          <a href="#" class="nav-item" data-target="Historique">Historique</a>
-          <div id="loginContainer">
-            <a
-              href="login.html"
-              id="loginLink"
-              class="nav-item"
-              data-target="Connexion"
-              data-active-color="black"
-              ><i class="fa-solid fa-user"></i>
-              <span id="loginText">Connexion</span>
-            </a>
-          </div>
+          <a href="orders.html" class="nav-item" data-target="Historique"
+            >Historique</a
+          >
+          <a
+            href="login.html"
+            class="nav-item"
+            data-target="Connexion"
+            data-active-color="black"
+          >
+            <i class="fa-solid fa-user"></i> Connexion
+          </a>
           <i
             role="button"
             class="fas fa-magnifying-glass pointer"
             aria-label="Rechercher"
+            tabindex="0"
           ></i>
-          <p role="button" class="cart-number pointer">
+          <p role="button" class="cart-number pointer" tabindex="0">
             <i class="fas fa-shopping-cart" aria-label="Panier"></i>1
           </p>
           <span class="nav-indicator"></span>
         </ul>
       </nav>
     </header>
-
     <!-- Main -->
     <main>
-      <section>
-        <h1>Welcome to our store</h1>
-        <p>Check out our products</p>
-      </section>
       <section>
         <h1>Welcome to our store</h1>
         <p>Check out our products</p>

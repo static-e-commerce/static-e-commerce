@@ -1,0 +1,127 @@
+@import 'main.css';
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: linear-gradient(180deg, #0575AD 3%, var(--dark-blue) 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+
+h1, h2, h3 {
+    color: var(--text-color);
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    font-size: default!important;
+}
+
+main {
+    width: 100%;
+    margin: 100px 20px!important;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    max-height: 300px;
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+[class^="container"] {
+    display: flex; 
+    gap: 70px;
+}
+
+[class^="card"] {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    height: auto;
+    margin-right: 40px;
+    margin-bottom: 40px;
+    box-sizing: border-box;
+    gap: 10px;
+}
+
+.card-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.bottom-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    p {
+        font-weight: bold;
+    }
+}
+
+.stock {
+    display: flex;
+    align-items: center;
+}
+
+i {
+    margin-left: 3%;
+}
+
+[class="fa-regular fa-check-circle"] {
+    color: var(--in-stock-color);
+}
+
+[class="fa-regular fa-circle-xmark"] {
+    color: var(--out-stock-color);
+}
+
+button:not(.hamburger) {
+    color: var(--header-text-color);
+    background-color: var(--button-color);
+    height: 2rem;
+    width: 10rem;
+    border-radius: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+}
+
+button:not(.hamburger):hover {
+    background-color: #eeab03;
+    transition: 0.5s;
+}
+
+.description {
+    margin: 5px 0;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    background-color: var(--text-color);
+}
+
+.wrap {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 20px 0;
+    h2 {
+        white-space: nowrap;
+    }
+}

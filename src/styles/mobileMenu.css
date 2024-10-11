@@ -1,0 +1,107 @@
+.hamburger {
+    display: none;
+    background-color: white;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-top: 1rem;
+    margin-left: 0rem;
+}
+
+.hamburger>i {
+    padding: 0;
+}
+
+aside {
+    display: flex;
+    visibility: hidden;
+    flex-direction: column;
+    position: fixed;
+    top: 20px;
+    left: -400px;
+    width: 300px;
+    background: #f0efef;
+    padding: 1rem;
+    border-radius: 5px;
+    transition: left 0.3s ease-in-out;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    height: 90vh;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+aside.open {
+    left: 10px;
+}
+
+.toggle-aside {
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    transition: background-color 0.2s, left 0.3s ease-in-out;
+    z-index: 1000;
+}
+
+.toggle-aside.open {
+    left: 320px;
+}
+
+aside>nav {
+    height: 100%;
+}
+
+.aside-ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 35px;
+}
+
+.logo-container img {
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+
+.logo-container p {
+    color: black;
+    font-weight: bold;
+}
+
+.right-buttons {
+    display: flex;
+    justify-content: flex-end;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.right-buttons a,
+.right-buttons i,
+.right-buttons p {
+    color: black;
+    margin-left: 15px;
+    margin: auto;
+    font-size: 25px;
+}
+
+.menu-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.menu-links a {
+    color: black;
+    font-size: 24px;
+    margin-bottom: 2rem;
+    font-weight: bold;
+}
