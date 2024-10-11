@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Retrouvez ici votre historique de commandes.">
+    <title>Mes Commandes</title>
+    <!-- Icon -->
+    <link rel="icon" href="../../resources/images/icon.ico" type="image/x-icon">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- Styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../styles/orders.css" />
+  </head>
+
+  <a href="#main-content" class="skip-link">
+    Passer au contenu principal
+  </a>
+  <a href="#footer" class="skip-link">
+      Passer au footer
+  </a>
+
+  <header>
+    <nav class="nav-header">
+      <ul id="left">
+        <img src="../../resources/images/logo.webp" alt="Logo Axe & Cible" />
+        <p>Axe & Cible</p>
+      </ul>
+      <ul id="right">
+        <a href="index.html" class="nav-item" data-target="Products">Produits</a>
+        <a href="orders.html" class="nav-item" data-target="Historique">Historique</a>
+        <a href="login.html" class="nav-item" data-target="Connexion" data-active-color="black">
+            <i class="fa-solid fa-user"></i> Connexion
+        </a>
+        <i
+          role="button"
+          class="fas fa-magnifying-glass pointer"
+          aria-label="Rechercher"
+          tabindex="0"
+        ></i>
+        <p role="button" class="cart-number pointer" tabindex="0">
+          <i class="fas fa-shopping-cart" aria-label="Panier"></i>1
+        </p>
+        <span class="nav-indicator"></span>
+      </ul>
+    </nav>
+  </header>
+
+<body>
+  <main>
+    <div id="content">
+      <!-- CONTENU DE LA PAGE -->
+    </div>
+  </main>
+
+  <footer id="footer" tabindex="0">
+    <p>&copy; 2024 Axe & Cible. Tous droits réservés.</p>
+    <div>
+        <p>Retrouvez nous sur nos réseaux</p>
+        <ul class="social">
+            <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram" aria-label="Instagram"></i></a></li>
+            <li><a href="https://x.com/" target="_blank"><i class="fa-brands fa-twitter" aria-label="Twitter"></i></a></li>
+            <li><a href="https://www.tiktok.com/fr/" target="_blank"><i class="fa-brands fa-tiktok" aria-label="Tiktok"></i></a></li>
+        </ul>
+    </div>
+  </footer>
+
+  <script src="../../dist/components/orders.js"></script>
+</body>
+</html>

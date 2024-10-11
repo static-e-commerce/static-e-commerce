@@ -1,0 +1,60 @@
+@media (max-width: 853px) {
+    main {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0;
+        height: auto;
+    }
+
+    section {
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 1em;
+    }
+
+    section>img {
+        max-height: 500px;
+        height: auto;
+        width: 60%;
+        min-width: 100px;
+        margin-top: 3rem;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+        border-radius: 30px;
+    }
+
+    .details {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .informations {
+        margin-left: auto;
+        margin-right: auto;
+        height: 95%;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    .category {
+        font-size: 24px;
+    }
+
+    .price {
+        font-size: 28px;
+    }
+
+    .description {
+        font-size: 18px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
