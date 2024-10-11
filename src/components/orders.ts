@@ -40,16 +40,14 @@ function displayOrders(orders: Order[]) {
   const content = document.getElementById("content");
   content!.innerHTML = 
   `
-    <h2 tabindex="0">MES COMMANDES</h2>
-    <hr />
     <section>
     ${orders.map((order) =>
       `
       <div class="order">
-        <h3 tabindex="0">${order.article.nom}</h3>
-        <p tabindex="0">Prix : ${order.article.prix}€</p>
-        <p tabindex="0">Commandé le : ${order.date}</p>
-        <p class="status" tabindex="0">${order.status}</p>
+        <p class="article-title" tabindex="0">${order.article.nom}</p>
+        <p>Prix : ${order.article.prix}€</p>
+        <p>Commandé le : ${order.date}</p>
+        <p class="status">${order.status}</p>
         <button class="supportLink">Contacter Support</button>
       </div>
       `).join("")}
@@ -106,7 +104,8 @@ function displayContacts() {
 
 (async () => {
     const products = await fetchProductList();
-    const orders = generateOrders(products);
+    const productsToUse = products.filter((product) => product.prix > 100);
+    const orders = generateOrders(productsToUse);
     displayOrders(orders);
     applyStatusColors();
 })();
