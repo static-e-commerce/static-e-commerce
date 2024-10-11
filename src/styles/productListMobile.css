@@ -2,4 +2,12 @@
     img:not(nav img) {
         height: auto;
     }
+
+    .description {
+        display: none;
+    }
+
+    h2 {
+        font-size: 1em;
+    }
 }

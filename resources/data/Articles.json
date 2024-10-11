@@ -6,7 +6,7 @@
         "prix": 129.99,
         "categorie": "Mobilier",
         "stock": true,
-        "image": "../../resources/images/chaise-bureau.webp"
+        "image": "../../resources/images/chaise-bureau-petite.webp"
       },
       {
         "nom": "Lampe de chevet LED",
@@ -14,7 +14,7 @@
         "prix": 39.99,
         "categorie": "Éclairage",
         "stock": false,
-        "image": "../../resources/images/lampe-led.webp"
+        "image": "../../resources/images/lampe-led-petite.webp"
       },
       {
         "nom": "Casque audio sans fil",
@@ -22,7 +22,7 @@
         "prix": 89.99,
         "categorie": "Électronique",
         "stock": true,
-        "image": "../../resources/images/casque-sans-fil.webp"
+        "image": "../../resources/images/casque-sans-fil-petite.webp"
       },
       {
         "nom": "Tapis de yoga antidérapant",
@@ -30,7 +30,7 @@
         "prix": 24.99,
         "categorie": "Sport",
         "stock": true,
-        "image": "../../resources/images/tapis-yoga.webp"
+        "image": "../../resources/images/tapis-yoga-petite.webp"
       },
       {
         "nom": "Table basse scandinave",
@@ -38,7 +38,7 @@
         "prix": 149.99,
         "categorie": "Mobilier",
         "stock": true,
-        "image": "../../resources/images/table-basse.webp"
+        "image": "../../resources/images/table-basse-petite.webp"
       },
       {
         "nom": "Cafetière italienne",
@@ -46,7 +46,7 @@
         "prix": 29.99,
         "categorie": "Cuisine",
         "stock": true,
-        "image": "../../resources/images/cafetiere-italienne.webp"
+        "image": "../../resources/images/cafetiere-italienne-petite.webp"
       },
       {
         "nom": "Couverts en acier inoxydable",
@@ -54,7 +54,7 @@
         "prix": 59.99,
         "categorie": "Cuisine",
         "stock": true,
-        "image": "../../resources/images/couverts-inox.webp"
+        "image": "../../resources/images/couverts-inox-petite.webp"
       },
       {
         "nom": "Sac à dos de randonnée",
@@ -62,7 +62,7 @@
         "prix": 79.99,
         "categorie": "Sport",
         "stock": false,
-        "image": "../../resources/images/sac-a-dos.webp"
+        "image": "../../resources/images/sac-a-dos-petite.webp"
       },
       {
         "nom": "Machine à laver compacte",
@@ -70,7 +70,7 @@
         "prix": 299.99,
         "categorie": "Électroménager",
         "stock": true,
-        "image": "../../resources/images/machine-a-laver.webp"
+        "image": "../../resources/images/machine-a-laver-petite.webp"
       },
       {
         "nom": "Écouteurs sans fil",
@@ -78,7 +78,7 @@
         "prix": 59.99,
         "categorie": "Électronique",
         "stock": true,
-        "image": "../../resources/images/ecouteurs-sans-fil.webp"
+        "image": "../../resources/images/ecouteurs-sans-fil-petite.webp"
       },
       {
         "nom": "Four à micro-ondes avec grill",
@@ -86,7 +86,7 @@
         "prix": 99.99,
         "categorie": "Électroménager",
         "stock": false,
-        "image": "../../resources/images/four-micro-ondes.webp"
+        "image": "../../resources/images/four-micro-ondes-petite.webp"
       },
       {
         "nom": "Vélo électrique pliable",
@@ -94,7 +94,7 @@
         "prix": 799.99,
         "categorie": "Transport",
         "stock": true,
-        "image": "../../resources/images/velo-electrique.webp"
+        "image": "../../resources/images/velo-electrique-petite.webp"
       },
       {
         "nom": "Grille-pain en acier inoxydable",
@@ -102,7 +102,7 @@
         "prix": 34.99,
         "categorie": "Cuisine",
         "stock": true,
-        "image": "../../resources/images/grille-pain.webp"
+        "image": "../../resources/images/grille-pain-petite.webp"
       },
       {
         "nom": "Lunettes de soleil polarisées",
@@ -110,7 +110,7 @@
         "prix": 24.99,
         "categorie": "Accessoires",
         "stock": false,
-        "image": "../../resources/images/lunettes-soleil.webp"
+        "image": "../../resources/images/lunettes-soleil-petite.webp"
       },
       {
         "nom": "Imprimante multifonction",
@@ -118,7 +118,7 @@
         "prix": 159.99,
         "categorie": "Électronique",
         "stock": true,
-        "image": "../../resources/images/imprimante.webp"
+        "image": "../../resources/images/imprimante-petite.webp"
       },
       {
         "nom": "Gants de cyclisme",
@@ -126,7 +126,7 @@
         "prix": 19.99,
         "categorie": "Sport",
         "stock": true,
-        "image": "../../resources/images/gants-cyclisme.webp"
+        "image": "../../resources/images/gants-cyclisme-petite.webp"
       }
     ]
   }
