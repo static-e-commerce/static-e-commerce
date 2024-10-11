@@ -11,9 +11,19 @@ body {
     overflow-x: hidden;
 }
 
+h1, h2, h3 {
+    color: var(--text-color);
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    font-size: default!important;
+}
+
 main {
     width: 100%;
-    margin: 100px 20px;
+    margin: 100px 20px!important;
 }
 
 img {
@@ -39,6 +49,7 @@ img {
     margin-right: 40px;
     margin-bottom: 40px;
     box-sizing: border-box;
+    gap: 10px;
 }
 
 .card-content {
@@ -67,11 +78,11 @@ i {
 }
 
 [class="fa-regular fa-check-circle"] {
-    color: var(--out-stock-color);
+    color: var(--in-stock-color);
 }
 
 [class="fa-regular fa-circle-xmark"] {
-    color: var(--in-stock-color);
+    color: var(--out-stock-color);
 }
 
 button:not(.hamburger) {
@@ -104,6 +115,7 @@ button:not(.hamburger):hover {
     display: flex;
     align-items: center;
     gap: 30px;
+    margin: 20px 0;
     h2 {
         white-space: nowrap;
     }
