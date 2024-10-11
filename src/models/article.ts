@@ -2,7 +2,7 @@ interface Article {
     nom: string;
     description: string;
     prix: number;
-    catégorie: string;
+    categorie: string;
     stock: boolean;
     image: string;
 }

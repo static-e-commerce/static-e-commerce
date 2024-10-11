@@ -20,7 +20,7 @@ const displayRecommendedProducts = async () => {
             <div class="card">
                 <a href="detailArticle.html"><img src='${product.image}' class="img" alt="${product.nom}"></a>
                 <h3>${product.nom}</h3>
-                <p>${product.catégorie}</p>
+                <p>${product.categorie}</p>
                 <p class="description">${product.description}</p>
                 <div class="stock">
                     <p>En stock</p>
@@ -38,7 +38,7 @@ const displayRecommendedProducts = async () => {
             <div class="card">
                 <a href="detailArticle.html"><img src='${product.image}' class="img" alt="${product.nom}"></a>
                 <h3>${product.nom}</h3>
-                <p>${product.catégorie}</p>
+                <p>${product.categorie}</p>
                 <p class="description">${product.description}</p>
                 <div class="stock">
                     <p>En rupture de stock</p>
@@ -57,7 +57,7 @@ const displayRecommendedProducts = async () => {
 
 const displayProductsByCategory = async (category: string) => {
     const products: Article[] = await getProductList()
-    const productsByCategory: Article[] = products.filter(product => product.catégorie === category)
+    const productsByCategory: Article[] = products.filter(product => product.categorie === category)
     let content = document.querySelector(`.container-${category.toLowerCase()}`)
     let htmlContent: string = ''
     for (const product of productsByCategory) {
