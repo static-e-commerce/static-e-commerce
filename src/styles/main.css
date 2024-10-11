@@ -1,8 +1,8 @@
 :root {
     --dark-blue: #023047;
     --blue: #219EBC;
-    --light-blue: #8ECAE6;
-    --button-color: #FFB703;
+    --light-blue: #A3D4EB;
+    --button-color: #FFBF75;
     --orange: #FB8500;
     --out-stock-color: #F60303;
     --in-stock-color: #04C300;
@@ -12,7 +12,12 @@
 }
 
 * {
-    font-family: 'roboto', sans-serif;
+    font-family: 'roboto', sans-serif;zz
+}
+
+p {
+    padding: 0;
+    margin: 0;
 }
 
 html, body {
@@ -33,13 +38,8 @@ body {
     background-attachment: fixed;
 }
 
-div {
-    padding: 1%;
-}
-
 p {
     color: var(--text-color);
-    font-size: 24px;
 }
 
 h1 {
@@ -169,26 +169,26 @@ header {
 .nav-indicator {
   display: none;
 }
-
-.pointer {
-    cursor: pointer;
-}
-
-.fa-user {
-    padding-left: 0;
-    padding-right: 0;
-}
-
-.fa-shopping-cart {
-    padding-right: 0;
-    padding-left: 0;
-}
-
-.cart-number {
-    padding-left: 0;
-    padding-right: 0;
-    font-weight: lighter;
-    color: rgb(75, 75, 75);
-    font-size: medium;
-    margin-left: 1rem;
-}
+  
+  .pointer {
+      cursor: pointer;
+  }
+  
+  .fa-user {
+      padding-left: 0;
+      padding-right: 0;
+  }
+  
+  .fa-shopping-cart {
+      padding-right: 0;
+      padding-left: 0;
+  }
+  
+  .cart-number {
+      padding-left: 0;
+      padding-right: 0;
+      font-weight: lighter;
+      color: rgb(75, 75, 75);
+      font-size: medium;
+      margin-left: 1rem;
+  }
