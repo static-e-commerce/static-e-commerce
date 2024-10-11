@@ -26,6 +26,11 @@ main {
     margin: 100px 20px!important;
 }
 
+p {
+    padding: 0;
+    margin: 0;
+}
+
 img {
     max-height: 300px;
     height: 300px;
