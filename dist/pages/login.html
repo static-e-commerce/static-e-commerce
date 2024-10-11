@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Connectez-vous" />
+    <title>Connexion</title>
+    <!-- Icon -->
+    <link rel="icon" href="../../resources/images/icon.ico" type="image/x-icon">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Styles -->
+    <link rel="stylesheet" href="../styles/login.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <!-- Scripts -->
+    <script src="../components/validation.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <embed src="../../resources/images/logo.svg" alt="Logo Axe & Cible" />
+      <h1>Axe & Cible</h1>
+    </header>
+    <main>
+      <section>
+        <div id="connexion">
+          <i class="fa-solid fa-user"></i>
+          <h1>Connexion</h1>
+        </div>
+        <div class="wrapper">
+          <h1>Enregistez-vous</h1>
+          <form id="form">
+            <div>
+              <label for="prenom">Prenom</label>
+              <input
+                type="text"
+                name="prenom"
+                label="prenom"
+                id="prenomInput"
+                placeholder="Prenom"
+              />
+            </div>
+            <div>
+              <label for="emailInput">Email</label>
+              <input
+                type="email"
+                name="email"
+                id="emailInput"
+                placeholder="Email"
+              />
+            </div>
+            <div>
+              <label for="passwordInput">Mot de Passe</label>
+              <input
+                type="password"
+                name="password"
+                id="passwordInput"
+                placeholder="Mot de Passe"
+              />
+            </div>
+            <div>
+              <label for="repeatPasswordInput">Répéter le mot de passe</label>
+              <input
+                type="password"
+                name="repeatPassword"
+                id="repeatPasswordInput"
+                placeholder="Répéter le mot de passe"
+              />
+            </div>
+            <button type="submit">Se connecter</button>
+          </form>
+          <p>Vous avez déjà un compte ? <a href="login.html">Se connecter</a></p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

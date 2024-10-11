@@ -1,0 +1,233 @@
+:root {
+  --accent-color: #4caf50;
+  --base-color: #ffffff;
+  --text-color: #333333;
+  --input-color: #f0f0f0;
+  --dark-blue: #023047;
+  --blue: #219ebc;
+  --light-blue: #8ecae6;
+  --button-color: #ffb703;
+  --orange: #fb8500;
+  --in-stock-color: #f60303;
+  --out-stock-color: #04c300;
+  --category-color: #ededed;
+  --text-color: #ffffff;
+  --header-text-color: #000000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Montserrat", sans-serif;
+  color: var(--text-color);
+  text-align: center;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #0575ad 3%, #023047 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 48px;
+  color: white;
+}
+
+embed {
+  width: 10%;
+}
+
+main {
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+div#connexion {
+  padding: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+}
+
+#connexion h1 {
+  padding-left: 8px;
+}
+
+section h1 {
+  font-size: 32px;
+}
+
+.wrapper {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper h1 {
+  padding-bottom: 16px;
+}
+
+h1 {
+  text-transform: uppercase;
+}
+
+form {
+  width: min(400px, 100%);
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+form > div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+}
+
+label {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+input {
+  box-sizing: border-box;
+  flex-grow: 1;
+  min-width: 0;
+  height: 50px;
+  width: 400px;
+  padding: 1em;
+  font: inherit;
+  border: 2px solid var(--input-color);
+  border-radius: 10px;
+  background-color: var(--input-color);
+  transition: all 0.3s ease;
+}
+
+input:hover,
+input:focus {
+  border-color: var(--accent-color);
+  outline: none;
+}
+
+button {
+  margin-top: 10px;
+  padding: 0.85em 4em;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--button-color);
+  color: black;
+  font: inherit;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover,
+button:focus {
+  background-color: var(--orange);
+}
+
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.incorrect input {
+  border-color: #ff4444;
+}
+
+#errorMessage {
+  color: #ff4444;
+}
+
+@media (max-width: 1100px) {
+  .wrapper {
+    width: min(600px, 100%);
+    border-radius: 0;
+  }
+}
+
+.error-message {
+  color: red;
+  font-size: 0.8em;
+  margin-top: 5px;
+}
+
+.error input {
+  border-color: red;
+  border-bottom: 4px solid red;
+}
+
+.success input {
+  border-color: green;
+  border-bottom: 4px solid green;
+}
+
+.validation-message {
+  font-size: 16px;
+  margin-top: 5px;
+  display: flex;
+  flex-direction: row;
+}
+
+.validation-message i {
+  margin-right: 5px;
+}
+
+.error .validation-message {
+  color: red;
+}
+
+.success .validation-message {
+  color: green;
+}
+
+.error-icon {
+  margin-right: 5px;
+  font-style: normal;
+}
+
+@media (max-width: 800px) {
+  header h1 {
+    font-size: 32px;
+  }
+  section h1,
+  #connexion i {
+    font-size: 24px;
+  }
+  embed {
+    width: 13%;
+  }
+}
