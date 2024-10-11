@@ -11,6 +11,10 @@
     --header-text-color: #000000;
 }
 
+* {
+    font-family: 'roboto', sans-serif;
+}
+
 html, body {
     height: 100%;
     margin: 0;
@@ -34,13 +38,11 @@ div {
 }
 
 p {
-    font-family: 'Roboto', sans-serif;
     color: var(--text-color);
     font-size: 24px;
 }
 
 h1 {
-    font-family: 'Roboto', sans-serif;
     color: var(--text-color);
     font-weight: bold;
     font-size: 96px;
@@ -63,7 +65,6 @@ button {
 }
 
 button:not(.hamburger) {
-    font-family: 'Roboto', sans-serif;
     color: var(--header-text-color);
     background-color: var(--button-color);
     height: 4rem;
@@ -114,7 +115,6 @@ header {
   padding-left: 16px;
   margin: 0px;
   font-weight: bold;
-  font-family: 'roboto', sans-serif;
 }
 
 .nav-header ul {
@@ -158,10 +158,6 @@ header {
   color: black;
   border-bottom: gray 5px solid;
   border-radius: 0 0 4px 4px;
-}
-
-.nav-item {
-    font-family: 'roboto', sans-serif;
 }
 
 .nav-item.is-active {
