@@ -3,6 +3,16 @@
   --base-color: #ffffff;
   --text-color: #333333;
   --input-color: #f0f0f0;
+  --dark-blue: #023047;
+  --blue: #219ebc;
+  --light-blue: #8ecae6;
+  --button-color: #ffb703;
+  --orange: #fb8500;
+  --in-stock-color: #f60303;
+  --out-stock-color: #04c300;
+  --category-color: #ededed;
+  --text-color: #ffffff;
+  --header-text-color: #000000;
 }
 
 * {
@@ -132,8 +142,8 @@ button {
   padding: 0.85em 4em;
   border: none;
   border-radius: 5px;
-  background-color: var(--accent-color);
-  color: var(--base-color);
+  background-color: var(--button-color);
+  color: black;
   font: inherit;
   font-weight: 600;
   text-transform: uppercase;
@@ -143,7 +153,7 @@ button {
 
 button:hover,
 button:focus {
-  background-color: var(--text-color);
+  background-color: var(--orange);
 }
 
 a {
