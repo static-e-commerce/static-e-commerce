@@ -20,9 +20,9 @@ html {
 
 body {
   min-height: 100vh;
-  background-image: url("background.jpg");
-  background-size: cover;
-  background-position: right;
+  background: linear-gradient(180deg, #0575ad 3%, #023047 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   overflow: hidden;
 }
 
@@ -34,6 +34,7 @@ header {
 
 header h1 {
   font-size: 48px;
+  color: white;
 }
 
 embed {
@@ -47,6 +48,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: white;
 }
 
 div#connexion {
