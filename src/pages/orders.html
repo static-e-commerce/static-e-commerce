@@ -15,24 +15,28 @@
     <!-- Scripts -->
     <script defer src="../models/commande.js"></script>
   </head>
+
   <header>
-    <nav>
+    <nav class="nav-header">
       <ul id="left">
         <img src="../../resources/images/logo.webp" alt="Logo Axe & Cible" />
         <p>Axe & Cible</p>
       </ul>
       <ul id="right">
         <a href="productList.html" class="nav-item" data-target="Products">Produits</a>
-        <a href="orders.html" id="ordersLink" class="nav-item" data-target="Commandes">Mes Commandes</a>
-        <embed src="../../resources/images/contact.svg" />
-        <a href="login.html" class="nav-item" data-target="Connexion" data-active-color="black">Connexion</a>
-        <embed src="../../resources/images/recherche.svg" />
-        <embed src="../../resources/images/cart.svg" />
-        <p>1</p>
+        <a href="orders.html" class="nav-item" data-target="Historique">Historique</a>
+        <a href="login.html" class="nav-item" data-target="Connexion" data-active-color="black">
+            <i class="fa-solid fa-user"></i> Connexion
+        </a>
+        <i role="button" class="fas fa-magnifying-glass pointer" aria-label="Rechercher" tabindex="0"></i>
+        <p role="button" class="cart-number pointer" tabindex="0">
+            <i class="fas fa-shopping-cart" aria-label="Panier"></i>1
+        </p>
         <span class="nav-indicator"></span>
       </ul>
     </nav>
-  </header>
+</header>
+
   <body>
     <main>
       <div id="content">
