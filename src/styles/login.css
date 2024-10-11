@@ -13,7 +13,6 @@
 
 html {
   font-family: "Montserrat", sans-serif;
-  font-size: 12pt;
   color: var(--text-color);
   text-align: center;
 }
@@ -39,7 +38,6 @@ header h1 {
 
 embed {
   width: 10%;
-  height: 10%;
 }
 
 main {
@@ -60,8 +58,12 @@ div#connexion {
   font-size: 32px;
 }
 
-div#connexion h1 {
+#connexion h1 {
   padding-left: 8px;
+}
+
+section h1 {
+  font-size: 32px;
 }
 
 .wrapper {
@@ -79,8 +81,6 @@ div#connexion h1 {
 }
 
 h1 {
-  font-size: 3rem;
-  font-weight: 900;
   text-transform: uppercase;
 }
 
@@ -208,4 +208,17 @@ a:hover {
 .error-icon {
   margin-right: 5px;
   font-style: normal;
+}
+
+@media (max-width: 800px) {
+  header h1 {
+    font-size: 32px;
+  }
+  section h1,
+  #connexion i {
+    font-size: 24px;
+  }
+  embed {
+    width: 13%;
+  }
 }
