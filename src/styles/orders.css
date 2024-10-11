@@ -1,4 +1,6 @@
-/***** CSS PAGE COMMANDES *****/
+@import "../styles/main.css";
+@import "../styles/mainMobile.css";
+@import "../styles/mobileMenu.css";
 
 hr {
     width: 95%;
