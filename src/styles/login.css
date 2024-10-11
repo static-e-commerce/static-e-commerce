@@ -32,7 +32,6 @@ body {
   background: linear-gradient(180deg, #0575ad 3%, #023047 100%);
   background-repeat: no-repeat;
   background-attachment: fixed;
-  overflow: hidden;
 }
 
 header {
