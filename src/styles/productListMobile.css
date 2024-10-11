@@ -1,0 +1,5 @@
+@media (max-width: 853px) {
+    img:not(nav img) {
+        height: auto;
+    }
+}

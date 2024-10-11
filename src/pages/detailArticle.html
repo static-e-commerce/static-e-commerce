@@ -37,9 +37,12 @@
               <ul id="right">
                 <a href="index.html" class="nav-item" data-target="Products">Produits</a>
                 <a href="orders.html" class="nav-item" data-target="Historique">Historique</a>
-                <a href="login.html" class="nav-item" data-target="Connexion" data-active-color="black">
-                    <i class="fa-solid fa-user"></i> Connexion
-                </a>
+                <div id="loginContainer">
+                    <a href="login.html" id="loginLink" class="nav-item" data-target="Connexion" data-active-color="black">
+                        <i class="fa-solid fa-user"></i>
+                        <span id="loginText">Connexion</span>
+                    </a>
+                </div>
                 <i role="button" class="fas fa-magnifying-glass pointer" aria-label="Rechercher" tabindex="0"></i>
                 <p role="button" class="cart-number pointer" tabindex="0">
                     <i class="fas fa-shopping-cart" aria-label="Panier"></i>1
@@ -59,7 +62,7 @@
                     <p class="category">Sport</p>
                     <p class="price">79,99€</p>
                     <p class="description">Sac à dos étanche avec compartiment pour sac de couchage et poches multiples.</p>
-                    <p class="stock-indicator in-stock"><i class="far fa-check-circle"></i> En stock</p>
+                    <p class="stock-indicator">En stock <i class="far fa-check-circle in-stock"></i></p>
                     <button><i class="fas fa-shopping-cart"></i> Ajouter au panier</button>
                 </div>
             </section>
@@ -106,5 +109,6 @@
         </aside>
 
     <script src="../../dist/components/mobileMenu.js" type="module"></script>
+    <script type="module" src="../../dist/components/header.js"></script>
   </body>
 </html>
