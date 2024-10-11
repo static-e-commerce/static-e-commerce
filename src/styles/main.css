@@ -44,6 +44,7 @@ footer {
 
   p {
     color: var(--header-text-color);
+    margin: 0;
   }
 }
 
@@ -109,18 +110,6 @@ button:not(.hamburger) {
 button:not(.hamburger):hover {
     background-color: #eeab03;
     transition: 0.5s;
-}
-
-.offscreen {
-    position: absolute;
-    top: -9999px;
-    color: var(--dark-blue);
-}
-
-.offscreen:focus {
-    position: absolute;
-    z-index: 999999;
-    top: 0;
 }
 
 header {

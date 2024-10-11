@@ -6,4 +6,17 @@
     .hamburger {
         display: block;
     }
+
+    footer {
+        margin-top: 1em;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        p {
+            margin-bottom: 0.5em;
+        }
+    }
 }
