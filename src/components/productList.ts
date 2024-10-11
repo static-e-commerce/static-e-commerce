@@ -19,7 +19,7 @@ const displayRecommendedProducts = async () => {
     if (product.stock) {
       htmlContent += `
             <div class="card">
-                <a href="detailArticle.html"><img src='${product.image}' class="img" alt="${product.nom}"></a>
+                <a href="detailArticle.html"><img src='${product.image}' class="img" alt="${product.nom}" role="button"></a>
                 <h3>${product.nom}</h3>
                 <p>${product.categorie}</p>
                 <p class="description">${product.description}</p>
@@ -36,7 +36,7 @@ const displayRecommendedProducts = async () => {
     } else {
       htmlContent += `
             <div class="card">
-                <a href="detailArticle.html"><img src='${product.image}' class="img" alt="${product.nom}"></a>
+                <a href="detailArticle.html"><img src='${product.image}' class="img" alt="${product.nom}" role="button"></a>
                 <h3>${product.nom}</h3>
                 <p>${product.categorie}</p>
                 <p class="description">${product.description}</p>
@@ -65,7 +65,7 @@ const displayProductsByCategory = async (category: string) => {
             htmlContent += 
             `
             <div class="card-${category}">
-                <a href="detailArticle.html"><img src='${product.image}' class="img" alt="${product.nom}"></a>
+                <a href="detailArticle.html"><img src='${product.image}' class="img" alt="${product.nom}" role="button"></a>
                 <h3>${product.nom}</h3>
                 <p class="description">${product.description}</p>
                 <div class="stock">
@@ -81,7 +81,7 @@ const displayProductsByCategory = async (category: string) => {
     } else {
       htmlContent += `
             <div class="card-${category}">
-                <a href="detailArticle.html"><img src='${product.image}' class="img" alt="${product.nom}"></a>
+                <a href="detailArticle.html"><img src='${product.image}' class="img" alt="${product.nom}" role="button"></a>
                 <h3>${product.nom}</h3>
                 <p class="description">${product.description}</p>
                 <div class="stock">
