@@ -5,6 +5,10 @@
     <meta />
     <title>Axe & Cible</title>
     <link rel="stylesheet" href="../styles/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
   </head>
   <body>
     <!-- Header -->
@@ -16,20 +20,28 @@
         </ul>
         <ul id="right">
           <a href="productList.html" class="nav-item" data-target="Products"
-            >Products</a
+            >Produits</a
           >
           <a href="#" class="nav-item" data-target="Historique">Historique</a>
-          <embed src="../../resources/images/contact.svg" />
-          <a
-            href="#"
-            class="nav-item"
-            data-target="Connexion"
-            data-active-color="black"
-            >Connexion</a
-          >
-          <embed src="../../resources/images/recherche.svg" />
-          <embed src="../../resources/images/cart.svg" />
-          <p>1</p>
+          <div id="loginContainer">
+            <a
+              href="login.html"
+              id="loginLink"
+              class="nav-item"
+              data-target="Connexion"
+              data-active-color="black"
+              ><i class="fa-solid fa-user"></i>
+              <span id="loginText">Connexion</span>
+            </a>
+          </div>
+          <i
+            role="button"
+            class="fas fa-magnifying-glass pointer"
+            aria-label="Rechercher"
+          ></i>
+          <p role="button" class="cart-number pointer">
+            <i class="fas fa-shopping-cart" aria-label="Panier"></i>1
+          </p>
           <span class="nav-indicator"></span>
         </ul>
       </nav>
@@ -37,50 +49,6 @@
 
     <!-- Main -->
     <main>
-      <section>
-        <h1>Welcome to our store</h1>
-        <p>Check out our products</p>
-      </section>
-      <section>
-        <h1>Welcome to our store</h1>
-        <p>Check out our products</p>
-      </section>
-      <section>
-        <h1>Welcome to our store</h1>
-        <p>Check out our products</p>
-      </section>
-      <section>
-        <h1>Welcome to our store</h1>
-        <p>Check out our products</p>
-      </section>
-      <section>
-        <h1>Welcome to our store</h1>
-        <p>Check out our products</p>
-      </section>
-      <section>
-        <h1>Welcome to our store</h1>
-        <p>Check out our products</p>
-      </section>
-      <section>
-        <h1>Welcome to our store</h1>
-        <p>Check out our products</p>
-      </section>
-      <section>
-        <h1>Welcome to our store</h1>
-        <p>Check out our products</p>
-      </section>
-      <section>
-        <h1>Welcome to our store</h1>
-        <p>Check out our products</p>
-      </section>
-      <section>
-        <h1>Welcome to our store</h1>
-        <p>Check out our products</p>
-      </section>
-      <section>
-        <h1>Welcome to our store</h1>
-        <p>Check out our products</p>
-      </section>
       <section>
         <h1>Welcome to our store</h1>
         <p>Check out our products</p>
@@ -117,6 +85,20 @@
         handleIndicator(e.target);
       });
       item.classList.contains("is-active") && handleIndicator(item);
+    });
+    document.addEventListener("DOMContentLoaded", function () {
+      const loginContainer = document.getElementById("loginContainer");
+      const loginLink = document.getElementById("loginLink");
+      const prenom = localStorage.getItem("prenom");
+
+      if (prenom) {
+        // L'utilisateur est connecté
+        // Remplacer le lien par un span non cliquable
+        const userSpan = document.createElement("span");
+        userSpan.innerHTML = `<i class="fa-solid fa-user"></i> ${prenom}`;
+        userSpan.id = "userDisplay";
+        loginContainer.replaceChild(userSpan, loginLink);
+      }
     });
   </script>
 </html>

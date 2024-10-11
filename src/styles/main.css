@@ -16,7 +16,6 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
-  background-color: #0575ad;
 }
 
 main {
@@ -24,9 +23,9 @@ main {
 }
 
 nav {
-    background-color: var(--category-color);
-    color: var(--header-text-color);
-    width: 100%;
+  background-color: var(--category-color);
+  color: var(--header-text-color);
+  width: 100%;
 }
 
 body {
@@ -56,13 +55,12 @@ button {
 
 header {
   background: white;
-
   display: flex;
   flex-direction: row;
 }
 
 nav {
-  display: flex;
+  height: 80px;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
@@ -136,4 +134,33 @@ nav img {
 
 .nav-indicator {
   display: none;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.fa-user {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.fa-shopping-cart {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.cart-number {
+  padding-left: 0;
+  padding-right: 0;
+  font-weight: lighter;
+  color: rgb(75, 75, 75);
+  font-size: medium;
+  margin-left: 1rem;
+}
+
+@media (max-width: 853px) {
+  header {
+    display: none;
+  }
 }
