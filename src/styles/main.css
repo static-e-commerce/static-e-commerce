@@ -1,24 +1,25 @@
 :root {
-    --dark-blue: #023047;
-    --blue: #219EBC;
-    --light-blue: #A3D4EB;
-    --button-color: #FFBF75;
-    --orange: #FB8500;
-    --out-stock-color: #F60303;
-    --in-stock-color: #04C300;
-    --category-color: #EDEDED;
-    --text-color: #FFFFFF;
-    --header-text-color: #000000;
+  --dark-blue: #023047;
+  --blue: #219ebc;
+  --light-blue: #a3d4eb;
+  --button-color: #ffbf75;
+  --orange: #fb8500;
+  --out-stock-color: #f60303;
+  --in-stock-color: #04c300;
+  --category-color: #ededed;
+  --text-color: #ffffff;
+  --header-text-color: #000000;
 }
 
 * {
-    font-family: 'roboto', sans-serif;
+  font-family: "roboto", sans-serif;
 }
 
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 ul, li {
@@ -28,9 +29,9 @@ ul, li {
 }
 
 nav {
-    background-color: var(--category-color);
-    color: var(--header-text-color);
-    width: 100%;
+  background-color: var(--category-color);
+  color: var(--header-text-color);
+  width: 100%;
 }
 
 footer {
@@ -66,29 +67,29 @@ footer {
 }
 
 body {
-    background: linear-gradient(180deg, #0575AD 3%, var(--dark-blue) 100%);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+  background: linear-gradient(180deg, #0575ad 3%, var(--dark-blue) 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 p {
-    color: var(--text-color);
+  color: var(--text-color);
 }
 
 h1 {
-    color: var(--text-color);
-    font-weight: bold;
-    font-size: 96px;
-    padding: 0;
-    margin: 0;
+  color: var(--text-color);
+  font-weight: bold;
+  font-size: 96px;
+  padding: 0;
+  margin: 0;
 }
 
 h2 {
-    font-size: xx-large;
+  font-size: xx-large;
 }
 
 h3 {
-    color: var(--category-color);
+  color: var(--category-color);
 }
 
 button {
@@ -98,19 +99,20 @@ button {
 }
 
 button:not(.hamburger) {
-    color: var(--header-text-color);
-    background-color: var(--button-color);
-    height: 4rem;
-    width: 17rem;
-    border-radius: 10px;
-    font-size: 20px;
-    cursor: pointer;
+  color: var(--header-text-color);
+  background-color: var(--button-color);
+  height: 4rem;
+  width: 17rem;
+  border-radius: 10px;
+  font-size: 20px;
+  cursor: pointer;
 }
 
 button:not(.hamburger):hover {
-    background-color: #eeab03;
-    transition: 0.5s;
+  background-color: #eeab03;
+  transition: 0.5s;
 }
+
 
 header {
   background: white;
@@ -119,16 +121,16 @@ header {
 }
 
 .nav-header {
-    height: 4em;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    background-color: #fff;
-    display: flex;
-    overflow: hidden;
-    overflow-x: auto;
-    position: fixed;
+  height: 4em;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  overflow: hidden;
+  overflow-x: auto;
+  position: fixed;
 }
 
 .nav-header p {

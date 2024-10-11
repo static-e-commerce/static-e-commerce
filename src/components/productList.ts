@@ -1,22 +1,23 @@
-const getProductList =  async (): Promise<Article[]> => {
-    try {
-        const response = await fetch('../../resources/data/Articles.json')
-        const data = await response.json()
-        return Object.values(data)[0] as Article[]
-    } catch(e) {
-        throw new Error(`Error: ${e}`)
-    }   
-}
+const getProductList = async (): Promise<Article[]> => {
+  try {
+    const response = await fetch("../../resources/data/Articles.json");
+    const data = await response.json();
+    return Object.values(data)[0] as Article[];
+  } catch (e) {
+    throw new Error(`Error: ${e}`);
+  }
+};
 
 const displayRecommendedProducts = async () => {
-    const products: Article[] = await getProductList()
-    const productsRecommended: Article[] = products.filter(product => product.stock && product.prix > 150)
-    let content = document.querySelector('.container')
-    let htmlContent:  string = ''
-    for (const product of productsRecommended) {
-        if(product.stock) {
-            htmlContent += 
-            `
+  const products: Article[] = await getProductList();
+  const productsRecommended: Article[] = products.filter(
+    (product) => product.stock && product.prix > 150
+  );
+  let content = document.querySelector(".container");
+  let htmlContent: string = "";
+  for (const product of productsRecommended) {
+    if (product.stock) {
+      htmlContent += `
             <div class="card">
                 <a href="detailArticle.html"><img src='${product.image}' class="img" alt="${product.nom}"></a>
                 <h3>${product.nom}</h3>
@@ -31,10 +32,9 @@ const displayRecommendedProducts = async () => {
                     <button class="main-content"><i class="fas fa-shopping-cart"></i> Ajouter au panier</button>
                 </div>
             </div>
-            `
-        } else {
-            htmlContent += 
-            `
+            `;
+    } else {
+      htmlContent += `
             <div class="card">
                 <a href="detailArticle.html"><img src='${product.image}' class="img" alt="${product.nom}"></a>
                 <h3>${product.nom}</h3>
@@ -49,11 +49,11 @@ const displayRecommendedProducts = async () => {
                     <button class="main-content" disabled><i class="fas fa-shopping-cart"></i> Ajouter au panier</button>
                 </div>
             </div>
-            `
-        }
+            `;
     }
-    content!.innerHTML = htmlContent
-}
+  }
+  content!.innerHTML = htmlContent;
+};
 
 const displayProductsByCategory = async (category: string) => {
     const products: Article[] = await getProductList()
@@ -77,10 +77,9 @@ const displayProductsByCategory = async (category: string) => {
                     <button class="main-content"><i class="fas fa-shopping-cart"></i> Ajouter au panier</button>
                 </div>
             </div>
-            `
-        } else {
-            htmlContent += 
-            `
+            `;
+    } else {
+      htmlContent += `
             <div class="card-${category}">
                 <a href="detailArticle.html"><img src='${product.image}' class="img" alt="${product.nom}"></a>
                 <h3>${product.nom}</h3>
@@ -94,18 +93,18 @@ const displayProductsByCategory = async (category: string) => {
                     <button class="main-content"><i class="fas fa-shopping-cart"></i> Ajouter au panier</button>
                 </div>
             </div>
-            `
-        }
+            `;
     }
-    content!.innerHTML = htmlContent
-}
+  }
+  content!.innerHTML = htmlContent;
+};
 
 (async () => {
-    await displayRecommendedProducts();
-    await displayProductsByCategory("Sport");
-    await displayProductsByCategory("Mobilier");
-    await displayProductsByCategory("Éclairage");
-    await displayProductsByCategory("Électronique");
-    await displayProductsByCategory("Cuisine");
-    await displayProductsByCategory("Électroménager");
+  await displayRecommendedProducts();
+  await displayProductsByCategory("Sport");
+  await displayProductsByCategory("Mobilier");
+  await displayProductsByCategory("Éclairage");
+  await displayProductsByCategory("Électronique");
+  await displayProductsByCategory("Cuisine");
+  await displayProductsByCategory("Électroménager");
 })();
