@@ -1,0 +1,81 @@
+@import "../styles/main.css";
+@import "../styles/mainMobile.css";
+@import "../styles/mobileMenu.css";
+
+hr {
+    width: 95%;
+    margin-left: 0;
+    border: 1px black white;
+}
+
+section {
+    margin: 0;
+    padding: 0;
+}
+
+.order {
+    width: 95%;
+    height: 125px;
+    padding: 5px;
+    border: 1px solid transparent;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-bottom-color: var(--light-blue);
+    border-bottom-style: dashed;
+    border-bottom-width: 1px;
+    border-radius: 5px;
+}
+
+.order h3 {
+    text-decoration: underline;
+    font-style: oblique;
+    width: 20%;
+    margin: 0;
+    overflow: hidden;
+    margin-right: 2vw;
+    color: var(--light-blue);
+}
+
+.order p {
+    margin: 0;
+    margin-right: 2vw;
+    font-weight: 700;
+    width:min-content;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    overflow-wrap: normal;
+}
+
+.order div {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.supportLink {
+    height: 50px;
+    width: 150px;
+    border-radius: 1em;
+    font-weight: bold;
+    font-family: roboto;
+    color: var(--header-text-color);
+    background-color: var(--button-color);
+    padding: 0;
+}
+
+/* Styles pour les statuts */
+.statut-fini {
+  color: var(--in-stock-color);
+}
+
+.statut-livraison {
+  color: #FFBF75;
+}
+
+.statut-annule {
+  color: #FDBABA;
+}
