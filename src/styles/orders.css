@@ -2,6 +2,14 @@
 @import "../styles/mainMobile.css";
 @import "../styles/mobileMenu.css";
 
+main{
+    padding-top: 4em;
+}
+
+h2, h4 {
+    color: var(--text-color);
+}
+
 hr {
     width: 95%;
     margin-left: 0;
@@ -28,7 +36,7 @@ section {
     border-radius: 5px;
 }
 
-.order h3 {
+.order .article-title {
     text-decoration: underline;
     font-style: oblique;
     width: 20%;
