@@ -53,10 +53,20 @@ h1 {
 
 h2 {
     font-size: xx-large;
+    font-family: roboto;
+    color: var(--text-color);
 }
 
 h3 {
     color: var(--category-color);
+    font-family: roboto;
+}
+
+h4 {
+    color: var(--category-color);
+    font-family: roboto;
+    font-size: large;
+    text-decoration: underline;
 }
 
 button {
@@ -152,7 +162,7 @@ nav img {
 /***** CSS PAGE COMMANDES *****/
 
 hr {
-    width: 95%;
+    width: 35%;
     margin-left: 0;
     border: 1px black white;
 }
@@ -170,7 +180,7 @@ section {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
     border-bottom-color: var(--light-blue);
     border-bottom-style: dashed;
     border-bottom-width: 1px;
@@ -218,7 +228,7 @@ section {
 
 /* Styles pour les statuts */
 .statut-fini {
-  color: var(--in-stock-color);
+  color: var(--out-stock-color);
 }
 
 .statut-livraison {
