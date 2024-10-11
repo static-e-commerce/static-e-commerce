@@ -85,18 +85,17 @@ function displayContacts() {
     <h2>CONTACTS</h2>
     <hr />
     <section>
-      <p tabindex="0">Contactez le support au numéro suivant :</p>
-      <h4 tabindex="0">07 12 13 14 15 16</h4>
+      <p>Contactez le support au numéro suivant :</p>
+      <h4>07 12 13 14 15 16</h4>
       <br>
-      <p tabindex="0">Si vous n'arrivez pas à nous joindre, contactez nous via notre adresse mail :</p>
-      <h4 tabindex="0">e-support@gmail.com</h4>
+      <p>Si vous n'arrivez pas à nous joindre, contactez nous via notre adresse mail :</p>
+      <h4>e-support@gmail.com</h4>
       <img
         title="photo d'un membre d'une équipe support souriant"
         alt="photo d'un membre d'une équipe support souriant"
         src="../../resources/images/support.jpg"
         width="85%"
         height="auto"
-        tabindex="0"
       />
     </section>
   `

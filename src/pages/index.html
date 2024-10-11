@@ -34,9 +34,12 @@
           <ul id="right">
             <a href="index.html" class="nav-item" data-target="Products">Produits</a>
             <a href="orders.html" class="nav-item" data-target="Historique">Historique</a>
-            <a href="login.html" class="nav-item" data-target="Connexion" data-active-color="black">
-                <i class="fa-solid fa-user"></i> Connexion
-            </a>
+            <div id="loginContainer">
+                <a href="login.html" id="loginLink" class="nav-item" data-target="Connexion" data-active-color="black">
+                    <i class="fa-solid fa-user"></i>
+                    <span id="loginText">Connexion</span>
+                </a>
+            </div>
             <i role="button" class="fas fa-magnifying-glass pointer" aria-label="Rechercher" tabindex="0"></i>
             <p role="button" class="cart-number pointer" tabindex="0">
                 <i class="fas fa-shopping-cart" aria-label="Panier"></i>1
@@ -124,5 +127,6 @@
         </div>
     </footer>
     <script type="module" src="../../dist/components/productList.js"></script>
+    <script type="module" src="../../dist/components/header.js"></script>
 </body>
 </html>
